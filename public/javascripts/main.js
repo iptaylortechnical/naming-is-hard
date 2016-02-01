@@ -115,6 +115,8 @@ function updateBlocks(){
 			var intent = '/' + rIntent;
 			var body = $('#type'+rIntent).val();
 			
+			$('#chat'+intent).scrollTop = $('#chat'+intent).scrollTop + 40;
+			
 			socket.emit('chat', {
 				intent:intent,
 				body:body
@@ -127,6 +129,8 @@ function updateBlocks(){
 				var id = this.id;
 			
 				var rIntent = id.split('type')[1];
+				
+				$('#chat'+rIntent).scrollTop = $('#chat'+rIntent).scrollTop + 40;
 			
 				var intent = '/' + rIntent;
 				var body = $(this).val();
