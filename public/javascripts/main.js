@@ -137,7 +137,6 @@ function updateBlocks(){
 				})
 				
 				$(this).val('');
-				
 			}
 		})
 	}
