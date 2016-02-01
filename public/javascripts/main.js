@@ -32,6 +32,7 @@ function updateBlocks(){
 	var parts = text.split(' ');
 	
 	modelBlocks = [];
+	console.log(parts.length);
 	for(var i = 0; i < parts.length; i++){
 		if(parts[i][0] == '@' || parts[i][0] == '/'){
 			
