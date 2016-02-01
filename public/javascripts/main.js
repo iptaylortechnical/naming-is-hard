@@ -131,6 +131,7 @@ function updateBlocks(){
 				var rIntent = id.split('type')[1];
 				
 				$('#chat'+rIntent).scrollTop = $('#chat'+rIntent).scrollTop + 40;
+				console.log($('#chat'+rIntent));
 			
 				var intent = '/' + rIntent;
 				var body = $(this).val();
