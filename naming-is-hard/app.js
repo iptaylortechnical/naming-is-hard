@@ -4,9 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongo = require('mongodb');
+var db = require('monk')('localhost:27017/naming');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var r = require('./routes/r');
+var main = require('./routes/main');
+var authorize = require('./routes/authorize');
 
 var app = express();
 
@@ -22,15 +27,23 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
-app.use('/users', users);
-
 // catch 404 and forward to error handler
+//expose db to other endpoints
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+	
+	req.db = db;
+	
+  //var err = new Error('Not Found');
+  //err.status = 404;
+	//next(err);
+  next();
 });
+
+app.use('/users', users);
+app.use('/r/*', r);
+app.use('/r', r);
+app.use('/', main);
+app.use('/auth', authorize);
 
 // error handlers
 
