@@ -15,8 +15,5 @@
     "serve-favicon": "~2.2.1",
 		"monk": "~1.0",
     "mongodb": "~2.0"
-  },
-	"scripts": {
-  	"start": "supervisor ./bin/www"
-	}
+  }
 }
