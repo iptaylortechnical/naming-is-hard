@@ -135,6 +135,8 @@ function updateBlocks(){
 					intent:intent,
 					body:body
 				})
+				
+				$(this).val('');
 			}
 		})
 	}
