@@ -32,7 +32,6 @@ function updateBlocks(){
 	var parts = text.split(' ');
 	
 	modelBlocks = [];
-	
 	for(var i = 0; i < parts.length; i++){
 		if(parts[i][0] == '@' || parts[i][0] == '/'){
 			
@@ -48,6 +47,8 @@ function updateBlocks(){
 			}
 		}
 	}
+	
+	consistent = consistent ? (!!modelBlocks[0] == !!shownBlocks[0] : false);
 	
 	if(!consistent){
 		
