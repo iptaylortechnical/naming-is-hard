@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 	var query = req.query;
 	var db = req.db;
 	
-	if(query){
+	if(query && query.phrases && query.session){
 		session = query.session;
 		phrases = query.phrases;
 		
