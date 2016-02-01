@@ -134,7 +134,6 @@ function updateBlocks(){
 			
 				var intent = '/' + rIntent;
 				var body = $(this).val();
-			
 				socket.emit('chat', {
 					intent:intent,
 					body:body
