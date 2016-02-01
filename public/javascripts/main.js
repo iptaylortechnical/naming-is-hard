@@ -30,7 +30,6 @@ $(document).ready(function(){
 		}
 	})
 	
-	
 	$('.in').change(updateBlocks);
 	$('.in').blur(updateBlocks);
 	$('.in').focus(updateBlocks);
@@ -121,6 +120,22 @@ function updateBlocks(){
 				body:body
 			})
 			
+		})
+		
+		$('.type-message').keypress(function(e){
+			if(e.keyCode == 13){
+				var id = this.id;
+			
+				var rIntent = id.split('type')[1];
+			
+				var intent = '/' + rIntent;
+				var body = $(this).val();
+			
+				socket.emit('chat', {
+					intent:intent,
+					body:body
+				})
+			}
 		})
 	}
 }
