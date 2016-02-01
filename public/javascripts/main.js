@@ -30,6 +30,7 @@ $(document).ready(function(){
 		}
 	})
 	
+	
 	$('.in').change(updateBlocks);
 	$('.in').blur(updateBlocks);
 	$('.in').focus(updateBlocks);
