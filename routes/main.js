@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 	if(session){
 		info.getSessionExists(session, db, function(e, exists){
 			if(exists){
-				res.send('home');
+				res.render('main');
 			}else{
 				res.render('login');
 			}

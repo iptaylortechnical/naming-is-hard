@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title TapNoble
+    link(href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='css/main-normalize.css')
+    link(rel='stylesheet prefetch', href='css/main-tile-style.css')
+    link(rel='stylesheet', href='css/main-style.css')
+  body
+    .header
+      .incushion
+      input.in
+    .body
+      #answers.dashboard.display-animation(0='', auto;='', width:='')
+        a#0.tile.tile-lg.tile-grey.ripple-effect.animated.selected.extra(0.41s;='')
+          span.content-wrapper
+            span.tile-content
+              .chat-container
+              span.tile-holder.tile-holder-sm.sendholder
+                span.title
+                  input.type-message
+                  button send
+          span.ink.animate(270px;=' ', width:=' ', top:=' ', 104px;=' ', left:=' ', -44px;='')
+        a#1.tile.tile-lg.tile-grey.ripple-effect.animated.selected.extra(0.41s;='')
+          span.content-wrapper
+            span.tile-content
+              .chat-container
+              span.tile-holder.tile-holder-sm.sendholder
+                span.title
+                  input.type-message
+                  button send
+          span.ink.animate(270px;=' ', width:=' ', top:=' ', 104px;=' ', left:=' ', -44px;='')
+        a#2.tile.tile-lg.tile-grey.ripple-effect.animated.selected.extra(0.41s;='')
+          span.content-wrapper
+            span.tile-content
+              .chat-container
+              span.tile-holder.tile-holder-sm.sendholder
+                span.title
+                  input.type-message
+                  button send
+          span.ink.animate(270px;=' ', width:=' ', top:=' ', 104px;=' ', left:=' ', -44px;='')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='/javascripts/main.js')
