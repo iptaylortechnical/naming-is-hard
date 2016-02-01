@@ -53,6 +53,8 @@ body{
 	font-family:"source code pro";
 	text-align:center;
 	font-size:30px;
+	display:block;
+	overflow-y:scroll;
 }
 
 .type-message{
@@ -81,4 +83,29 @@ button{
 
 button:hover{
   background-color:#BD2F0E;
+}
+
+.message{
+  min-height:20px;
+  border:1px solid lightgrey;
+  margin:5px;
+  display:inline-flex;
+	font-size:15px;
+	width:500px;
+}
+
+.name{
+  max-width:20%;
+  display:block;
+  top:50%;
+  text-align:center;
+  position:relavtive;
+  vertical-align:center;
+  padding:10px
+}
+
+.message-text{
+  min-width:80%;
+  max-width:89%;
+  display:block;
 }

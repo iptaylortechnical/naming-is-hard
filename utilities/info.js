@@ -34,6 +34,14 @@ exports.getSessionExists = function(session, db, next){
 	})
 }
 
+exports.getUserFromSession = function(session, db, next){
+	var users = db.get('users');
+	
+	users.find({session:session}, function(e, docs){
+		next(e, docs[0].username);
+	})
+}
+
 exports.getSessionFromUser = function(username, password, db, next){
 	var users = db.get('users');
 	
