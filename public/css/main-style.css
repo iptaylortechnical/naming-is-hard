@@ -108,4 +108,5 @@ button:hover{
   min-width:80%;
   max-width:89%;
   display:block;
+	text-align:right;
 }
