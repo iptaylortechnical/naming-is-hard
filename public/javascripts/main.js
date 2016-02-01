@@ -28,7 +28,7 @@ function updateBlocks(){
 	console.log('checked');
 	
 	var text = $('.in').val();
-	
+	console.log('test');
 	var parts = text.split(' ');
 	
 	modelBlocks = [];
