@@ -101,7 +101,8 @@ button:hover{
   text-align:center;
   position:relavtive;
   vertical-align:center;
-  padding:10px
+  padding:10px;
+	overflow-x:10px;
 }
 
 .message-text{
@@ -109,4 +110,5 @@ button:hover{
   max-width:89%;
   display:block;
 	text-align:right;
+	padding:10px;
 }
