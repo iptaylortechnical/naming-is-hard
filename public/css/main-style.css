@@ -103,7 +103,7 @@ button:hover{
   position:relavtive;
   vertical-align:center;
   padding:10px;
-	overflow-x:10px;
+	overflow-x:hidden;
 }
 
 .message-text{
