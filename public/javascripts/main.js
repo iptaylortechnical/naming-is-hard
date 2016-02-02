@@ -10,7 +10,7 @@ var pos = 0;
 //TODO: VERY TEMPORARY
 var lastBody = '';
 
-var socket = io(':3000');
+var socket = io(':80');
 
 socket.on('auth', function(){
 	console.log('got auth request, sending cookie');
