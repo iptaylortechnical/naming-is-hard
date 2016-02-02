@@ -5,11 +5,12 @@ var amountOfBlocks = 0;
 var modelBlocks = [];
 var shownBlocks = [];
 var idBlocks = {};
+var pos = 0;
 
 //TODO: VERY TEMPORARY
 var lastBody = '';
 
-var socket = io(':80');
+var socket = io(':3000');
 
 socket.on('auth', function(){
 	console.log('got auth request, sending cookie');
@@ -56,6 +57,10 @@ function updateBlocks(){
 			intentParts.shift();
 			
 			var intent = intentParts.join('');
+			
+			pos += 40;
+			$('#chat'+intent).scrollTop(pos);
+			
 			if(body != lastBody){
 				$('#chat' + intent).append('<div class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
 				lastBody = body;
@@ -115,8 +120,6 @@ function updateBlocks(){
 			var intent = '/' + rIntent;
 			var body = $('#type'+rIntent).val();
 			
-			$('#chat'+intent).scrollTop = $('#chat'+intent).scrollTop + 40;
-			
 			socket.emit('chat', {
 				intent:intent,
 				body:body
@@ -129,11 +132,9 @@ function updateBlocks(){
 				var id = this.id;
 			
 				var rIntent = id.split('type')[1];
-				
-				$('#chat'+rIntent).scrollTop = $('#chat'+rIntent).scrollTop + 40;
-				console.log($('#chat'+rIntent));
 			
 				var intent = '/' + rIntent;
+				
 				var body = $(this).val();
 				socket.emit('chat', {
 					intent:intent,
