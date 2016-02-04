@@ -10,6 +10,7 @@ $(".login").submit(function(){
 	
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
+		console.log('get here');
 	    if (xhttp.readyState == 4 && xhttp.status == 200) {
 				var response = JSON.parse(xhttp.responseText);
 				
