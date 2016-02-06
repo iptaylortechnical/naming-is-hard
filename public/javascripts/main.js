@@ -119,7 +119,7 @@ function updateBlocks(){
 				xhttp.onreadystatechange = function() {
 			    if (xhttp.readyState == 4 && xhttp.status == 200) {
 						var response = JSON.parse(xhttp.responseText);
-						if(!response.err){
+						if(!response.err && response.records){
 					  	var recordLength = response.records.length;
 							
 							for(var j = 0; j < recordLength; j++){
