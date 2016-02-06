@@ -4,7 +4,7 @@ exports.userExists = function(username, db, next){
 	var users = db.get('users');
 	
 	users.find({username:username}, function(e, docs){
-		next(e, !!docs[0]);
+		if(!e)next(e, !!docs[0]);
 	});
 }
 

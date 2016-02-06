@@ -112,8 +112,14 @@ button:hover{
   display:block;
 	text-align:left;
 	padding:10px;
+	overflow-wrap:;
 }
 
 .rap{
 	height:283px;
+}
+
+.dash{
+	width: auto;
+	display:inline-block;
 }
