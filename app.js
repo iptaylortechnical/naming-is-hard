@@ -49,13 +49,13 @@ app.lel = function(io){
 						for(var k = 0; k < theKeys.length; k++){
 							console.log('sending ' + msg.body + ' to ' + theKeys[k] + ' from ' + msg.intent);
 							subscriptions[msg.intent][theKeys[k]].emit(msg.intent, {name: doc, body:msg.body, intent:msg.intent});
-							info.storeChat(db, msg.intent, {
-								name: doc,
-								body:msg.body
-							});
 							TEMPORARY_TIME_STAMP_END = new Date().getTime();
 							console.log('message took ' + (TEMPORARY_TIME_STAMP_END - TEMPORARY_TIME_STAMP_START));
 						}
+						info.storeChat(db, msg.intent, {
+							name: doc,
+							body:msg.body
+						});
 					})
 				}
 			})
