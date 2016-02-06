@@ -55,3 +55,36 @@ exports.getSessionFromUser = function(username, password, db, next){
 		
 	})
 }
+
+exports.storeChat = function(db, intent, msg){
+	var records = db.get('records');
+	
+	records.find({intent:intent}, function(e, docs){
+		if(!!docs[0]){
+			records.update({intent:intent}, {
+				$push: {
+					records: msg
+				}
+			})
+		}else{
+			records.insert({
+				intent:intent,
+				records: [
+					msg
+				]
+			})
+		}
+	})
+}
+
+exports.getChats = function(db, intent, next){
+	var records = db.get('records');
+	
+	records.find({intent:intent}, function(e, docs){
+		if(docs[0]){
+			next(e, docs[0].records || '');
+		}else{
+			next('intent does not exist ' + e);
+		}
+	})
+}

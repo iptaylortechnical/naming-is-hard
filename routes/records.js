@@ -1,16 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var info = require('../utilities/info');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 	
 	var urlParts = req.originalUrl.split('/');
 	var err;
-	var db = req.db;
 	
 	//no db. rip.
-	if(!db){
+	if(req.db){
 	  var err = new Error('No DB');
 	  err.status = 500;
 		next(err);
@@ -24,34 +22,26 @@ router.get('/', function(req, res, next) {
 	var ident;
 	var room;
 	var name;
-	var legit = true;
+
 	
 	if(urlParts[1]){
 		ident = urlParts[1];
 	}else{
 		err = "Did not specify room"
-		legit = false;
 	}
 	
 	if(shouldBeR == 'r'){
 		name = ident;
 	}else{
 		err = 'tricksy, false';
-		legit = false;
 	}
 	
-	if(legit){
-		info.getChats(db, '/'+name, function(e, docs){
-			room = {
-				name: name,
-				err: err,
-				legit:legit,
-				records:docs
-			}
-	
-			res.send(room);
-		})
+	room = {
+		name: name,
+		err: err
 	}
+	
+	  res.send(room);
 });
 
 module.exports = router;

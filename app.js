@@ -36,25 +36,31 @@ app.lel = function(io){
 			chatters[session] = socket;
 			chatters[session].session = session;
 			chatters[session].on('chat', function(msg){
-				TEMPORARY_TIME_STAMP_START = new Date().getTime();
-				var senderSession = this.session;
-				var intent = msg.intent;
-				var body = msg.body;
+				if(msg.intent && msg.body){
+					TEMPORARY_TIME_STAMP_START = new Date().getTime();
+					var senderSession = this.session;
+					var intent = msg.intent;
+					var body = msg.body;
 				
-				// console.log("Received chat from " + this.session + " intended for " + msg.intent + " with body " + msg.body);
+					console.log("Received chat from " + this.session + " intended for " + msg.intent + " with body " + msg.body);
 				
-				info.getUserFromSession(senderSession, db, function(e, doc){
-					var theKeys = Object.keys(subscriptions[msg.intent]);
-					for(var k = 0; k < theKeys.length; k++){
-						// console.log('sending ' + msg.body + ' to ' + theKeys[k] + ' from ' + msg.intent);
-						subscriptions[msg.intent][theKeys[k]].emit(msg.intent, {name: doc, body:msg.body, intent:msg.intent});
-						TEMPORARY_TIME_STAMP_END = new Date().getTime();
-						console.log('message took ' + (TEMPORARY_TIME_STAMP_END - TEMPORARY_TIME_STAMP_START));
-					}
-				})
+					info.getUserFromSession(senderSession, db, function(e, doc){
+						var theKeys = Object.keys(subscriptions[msg.intent]);
+						for(var k = 0; k < theKeys.length; k++){
+							console.log('sending ' + msg.body + ' to ' + theKeys[k] + ' from ' + msg.intent);
+							subscriptions[msg.intent][theKeys[k]].emit(msg.intent, {name: doc, body:msg.body, intent:msg.intent});
+							info.storeChat(db, msg.intent, {
+								name: doc,
+								body:msg.body
+							});
+							TEMPORARY_TIME_STAMP_END = new Date().getTime();
+							console.log('message took ' + (TEMPORARY_TIME_STAMP_END - TEMPORARY_TIME_STAMP_START));
+						}
+					})
+				}
 			})
 			chatters[session].on('disconnected', function(){
-				// chatters[session] = null;
+				chatters[session] = null;
 			})
 			
 			socket.emit('authenticated');
@@ -67,8 +73,6 @@ app.lel = function(io){
 }
 
 function setSubscriptions(session, channels){
-	console.log(session);
-	console.log(channels);
 	for(var i = 0; i < channels.length; i++){
 		if(subscriptions[channels[i]]){
 			subscriptions[channels[i]][chatters[session].session] = chatters[session];

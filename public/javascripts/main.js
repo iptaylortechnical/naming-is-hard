@@ -10,6 +10,8 @@ var modelBlocks = [];
 var shownBlocks = [];
 var idBlocks = {};
 
+var bank = {};
+
 var hasCallbackBeenSet = {};
 
 //TODO: VERY TEMPORARY
@@ -25,6 +27,10 @@ socket.on('auth', function(){
 socket.on('authenticated', function(){
 	console.log('authenticated, now can start running code blocks');
 	isAuthenticated = true;
+})
+
+socket.on('disconnected', function(){
+	isAuthenticated = false;
 })
 
 var consistent = false;
@@ -61,6 +67,7 @@ function updateBlocks(){
 		for(var i = 0; i < parts.length; i++){
 			if(!hasCallbackBeenSet[parts[i]]){
 				socket.on(parts[i], function(msg){
+					console.log(msg);
 					var rIntent = msg.intent;
 					var body = msg.body;
 					var nom = msg.name;
@@ -82,7 +89,7 @@ function updateBlocks(){
 		}
 	
 		var xhttp = new XMLHttpRequest();
-
+		
 		xhttp.open("GET", "/subscribe?session=" + $.cookie('session') + "&phrases=" + parts.join(','), true);
 		xhttp.send();
 		
@@ -93,14 +100,73 @@ function updateBlocks(){
 		
 		if(dashesLength < partsLength){
 			for(var i = dashesLength; i < partsLength; i++){
-				$('body').append('<div id="dash' + i + '" 0="" auto;="" width:="" class="dash dashboard display-animation"></div>');
+				$('.body').append('<div id="dash' + i + '" 0="" auto;="" width:="" class="dash dashboard display-animation"></div>');
 			}
 		}
 		
 		for(var i = 0; i < partsLength; i++){
 			if(!($('#dash' + i).children().attr('id') == "a" + parts[i])){
-				var nomen = parts[i];
-				$('#dash' + i).html('<a id="a' + parts[i] + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected extra"><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
+				var nomen = parts[i].split('');
+				nomen.shift();
+				nomen = nomen.join('');
+				
+				bank[nomen] = i;
+				
+				var xhttp = new XMLHttpRequest();
+				
+				var records = '';
+				
+				xhttp.onreadystatechange = function() {
+			    if (xhttp.readyState == 4 && xhttp.status == 200) {
+						var response = JSON.parse(xhttp.responseText);
+						if(!response.err){
+					  	var recordLength = response.records.length;
+							
+							for(var j = 0; j < recordLength; j++){
+								records += '<div class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
+							}
+						}
+						
+						$('#dash' + bank[nomen]).html('<a id="a' + nomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected extra"><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
+			    	
+						$('#send'+nomen).click(function(){
+							var id = this.id;
+			
+							var rIntent = id.split('send')[1];
+			
+							var intent =  '/' + rIntent;
+							var body = $('#type'+rIntent).val();
+			
+							socket.emit('chat', {
+								intent:intent,
+								body:body
+							})
+			
+						})
+		
+						$('#type'+nomen).keypress(function(e){
+							if(e.keyCode == 13){
+								var id = this.id;
+			
+								var rIntent = id.split('type')[1];
+			
+								var intent = '/' + rIntent;
+				
+								var body = $(this).val();
+								socket.emit('chat', {
+									intent:intent,
+									body:body
+								})
+				
+								$(this).val('');
+				
+							}
+						})
+					}
+				};
+		
+				xhttp.open("GET", "/r" + parts[i], true);
+				xhttp.send();
 			}
 		}
 		
@@ -141,41 +207,6 @@ function updateBlocks(){
 //
 // 			amountOfBlocks = parts.length;
 // 			consistent = true;
-
-		
-			$('button').click(function(){
-				var id = this.id;
-			
-				var rIntent = id.split('send')[1];
-			
-				var intent = '/' + rIntent;
-				var body = $('#type'+rIntent).val();
-			
-				socket.emit('chat', {
-					intent:intent,
-					body:body
-				})
-			
-			})
-		
-			$('.type-message').keypress(function(e){
-				if(e.keyCode == 13){
-					var id = this.id;
-			
-					var rIntent = id.split('type')[1];
-			
-					var intent = '/' + rIntent;
-				
-					var body = $(this).val();
-					socket.emit('chat', {
-						intent:intent,
-						body:body
-					})
-				
-					$(this).val('');
-				
-				}
-			})
 	}
 }
 
