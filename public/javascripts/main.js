@@ -76,13 +76,13 @@ function updateBlocks(){
 					intentParts.shift();
 			
 					var intent = intentParts.join('');
-				
-					$('#chat'+intent).scrollTop(document.getElementById('chat'+intent).scrollHeight)
 			
 					//if(body != lastBody){
 						$('#chat' + intent).append('<div class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
 						//lastBody = body;
 						//}
+						
+						$('#chat'+intent).scrollTop(document.getElementById('chat'+intent).scrollHeight);
 				})
 				hasCallbackBeenSet[parts[i]] = true;
 			}
