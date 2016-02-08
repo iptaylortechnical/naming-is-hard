@@ -4,7 +4,7 @@ var amountOfBlocks = 0;
 
 var isAuthenticated = false;
 
-var PRODUCTION = true;
+var PRODUCTION = false;
 
 var modelBlocks = [];
 var shownBlocks = [];
@@ -61,9 +61,28 @@ function updateBlocks(){
 	
 		var text = $('.in').val();
 	
-		var parts = text.split(' ');
+		var parts = [];
+		
+		var rParts = text.split(' ');
+		
+		for(var i = 0; i < rParts.length; i++){
+			var cont = true;
+			
+			if(rParts[i][0]){
+				if(rParts[i][0] != '/'){
+					cont = false;
+				}
+			}else{
+				cont = false;
+			}
+			
+			if(cont){
+				parts[parts.length] = rParts[i];
+			}
+		}
 		
 		console.log(parts);
+		
 		for(var i = 0; i < parts.length; i++){
 			if(!hasCallbackBeenSet[parts[i]]){
 				socket.on(parts[i], function(msg){
@@ -104,69 +123,89 @@ function updateBlocks(){
 			}
 		}
 		
-		for(var i = 0; i < partsLength; i++){
-			if(!($('#dash' + i).children().attr('id') == "a" + parts[i])){
-				var nomen = parts[i].split('');
-				nomen.shift();
-				nomen = nomen.join('');
-				
-				bank[nomen] = i;
-				
-				var xhttp = new XMLHttpRequest();
-				
-				var records = '';
-				
-				xhttp.onreadystatechange = function() {
-			    if (xhttp.readyState == 4 && xhttp.status == 200) {
-						var response = JSON.parse(xhttp.responseText);
-						if(!response.err && response.records){
-					  	var recordLength = response.records.length;
-							
-							for(var j = 0; j < recordLength; j++){
-								records += '<div class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
-							}
-						}
-						
-						$('#dash' + bank[nomen]).html('<a id="a' + nomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected extra"><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
-			    	
-						$('#send'+nomen).click(function(){
-							var id = this.id;
-			
-							var rIntent = id.split('send')[1];
-			
-							var intent =  '/' + rIntent;
-							var body = $('#type'+rIntent).val();
-			
-							socket.emit('chat', {
-								intent:intent,
-								body:body
-							})
-			
-						})
+		if(dashesLength > partsLength){
+			for(var i = partsLength; i < dashesLength; i++){
+				$('#dash' + i).remove();
+			}
+		}
 		
-						$('#type'+nomen).keypress(function(e){
-							if(e.keyCode == 13){
+		for(var i = 0; i < partsLength; i++){
+			
+			var thePart = parts[i].split("");
+			thePart.shift();
+			thePart = thePart.join('');
+			
+			if(!($('#dash' + i).children().attr('id') == "a" + thePart)){
+				(function(){
+					console.log("element at $('#dash" + i + "') does not have an id of 'a" + thePart + "', but instead of " + $('#dash' + i).children().attr('id'));
+				
+					//TODO: just use thePart
+					var nomen = parts[i].split('');
+					nomen.shift();
+					nomen = nomen.join('');
+				
+					bank[nomen] = i;
+				
+					var xhttp = new XMLHttpRequest();
+				
+					var records = '';
+				
+					xhttp.onreadystatechange = function() {
+				    if (xhttp.readyState == 4 && xhttp.status == 200) {
+							var response = JSON.parse(xhttp.responseText);
+							if(!response.err && response.records){
+						  	var recordLength = response.records.length;
+							
+								for(var j = 0; j < recordLength; j++){
+									records += '<div class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
+								}
+							}
+						
+							var currentNomen = response.name;
+						
+							console.log(response);
+						
+							$('#dash' + bank[currentNomen]).html('<a id="a' + currentNomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected extra"><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+currentNomen+'</div><div id="chat' + currentNomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + currentNomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
+			    	
+							$('#send'+currentNomen).click(function(){
 								var id = this.id;
 			
-								var rIntent = id.split('type')[1];
+								var rIntent = id.split('send')[1];
 			
-								var intent = '/' + rIntent;
-				
-								var body = $(this).val();
+								var intent =  '/' + rIntent;
+								var body = $('#type'+rIntent).val();
+			
 								socket.emit('chat', {
 									intent:intent,
 									body:body
 								})
-				
-								$(this).val('');
-				
-							}
-						})
-					}
-				};
+			
+							})
 		
-				xhttp.open("GET", "/r" + parts[i], true);
-				xhttp.send();
+							$('#type'+currentNomen).keypress(function(e){
+								if(e.keyCode == 13){
+									var id = this.id;
+			
+									var rIntent = id.split('type')[1];
+			
+									var intent = '/' + rIntent;
+				
+									var body = $(this).val();
+									socket.emit('chat', {
+										intent:intent,
+										body:body
+									})
+				
+									$(this).val('');
+				
+								}
+							})
+						}
+					};
+		
+					xhttp.open("GET", "/r" + parts[i], true);
+					xhttp.send();
+				})();
 			}
 		}
 		

@@ -44,7 +44,7 @@ router.get('/', function(req, res, next) {
 		info.getChats(db, '/'+name, function(e, docs){
 			room = {
 				name: name,
-				err: err,
+				err: e,
 				legit:legit,
 				records:docs
 			}
