@@ -60,7 +60,7 @@ app.lel = function(io){
 				}
 			})
 			chatters[session].on('disconnected', function(){
-				chatters[session] = null;
+				delete chatters[session];
 			})
 			
 			socket.emit('authenticated');
@@ -74,11 +74,13 @@ app.lel = function(io){
 
 function setSubscriptions(session, channels){
 	for(var i = 0; i < channels.length; i++){
-		if(subscriptions[channels[i]]){
-			subscriptions[channels[i]][chatters[session].session] = chatters[session];
-		}else{
-			subscriptions[channels[i]] = {};
-			subscriptions[channels[i]][chatters[session].session] = chatters[session];
+		if(chatters[session]){
+			if(subscriptions[channels[i]]){
+				subscriptions[channels[i]][chatters[session].session] = chatters[session];
+			}else{
+				subscriptions[channels[i]] = {};
+				subscriptions[channels[i]][chatters[session].session] = chatters[session];
+			}
 		}
 	}
 }

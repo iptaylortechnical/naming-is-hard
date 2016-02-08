@@ -2,9 +2,9 @@ var scheduled;
 var timeScheduled;
 var amountOfBlocks = 0;
 
-var isAuthenticated = false;
+var isAuthenticated = true;
 
-var PRODUCTION = true;
+var PRODUCTION = false;
 
 var modelBlocks = [];
 var shownBlocks = [];
