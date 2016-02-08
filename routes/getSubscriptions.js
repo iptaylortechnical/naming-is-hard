@@ -8,20 +8,24 @@ router.get('/', function(req, res, next) {
 	var query = req.query;
 	var db = req.db;
 	
-	if(query && query.phrases && query.session){
+	if(query && query.session){
 		session = query.session;
-		phrases = query.phrases;
 		
 		info.getSessionExists(session, db, function(e, exists){
 			if(exists){
-				var parts = phrases.split(',');
-				req.setSubscriptions(session, parts);
-				res.state = 200;
-				res.send({
-					state: 'ok'
-				})
-				
-				info.storeSubscriptions(db, session, parts);
+				info.getSubscriptions(db, session, function(e, result){
+					if(!e && !!result){
+						res.state = 200;
+						res.send({
+							state: 'ok',
+							subscriptions:result
+						})
+					}else{
+						res.send({
+							err: e || 'no result'
+						})
+					}
+				});
 				
 			}else{
 				res.send({

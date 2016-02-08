@@ -36,6 +36,23 @@ socket.on('disconnected', function(){
 var consistent = false;
 
 $(document).ready(function(){
+	
+	var inHTTP = new XMLHttpRequest();
+	
+	inHTTP.onreadystatechange = function(){
+		if (inHTTP.readyState == 4 && inHTTP.status == 200) {
+			var response = JSON.parse(inHTTP.responseText);
+			var subs = response.subscriptions.join(' ');
+			
+			$('.in').val(subs);
+	
+			updateBlocks();
+		}
+	}
+	
+	inHTTP.open('GET', '/getsubs?session=' + $.cookie('session'), true);
+	inHTTP.send();
+	
 	$('.in').on('keyup', function(){
 		if(!scheduled || (new Date().getMilliseconds()-timeScheduled < 500)){
 			clearTimeout();
@@ -46,12 +63,10 @@ $(document).ready(function(){
 			scheduled = true;
 		}
 	})
-	
+
 	$('.in').change(updateBlocks);
 	$('.in').blur(updateBlocks);
 	$('.in').focus(updateBlocks);
-	
-	updateBlocks();
 	
 });
 

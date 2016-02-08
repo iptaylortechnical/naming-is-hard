@@ -17,7 +17,8 @@ exports.createUser = function(username, password, db, next){
 		users.insert({
 			username: username,
 			password: password,
-			session: k
+			session: k,
+			subscriptions: []
 		});
 		
 		next(null, session);
@@ -85,6 +86,28 @@ exports.getChats = function(db, intent, next){
 			next(e, docs[0].records || '');
 		}else{
 			next('intent does not exist ' + e);
+		}
+	})
+}
+
+exports.storeSubscriptions = function(db, session, subs){
+	var users = db.get('users');
+	
+	users.update({session:session}, {
+		$set:{
+			subscriptions: subs
+		}
+	})
+}
+
+exports.getSubscriptions = function(db, session, next){
+	var users = db.get('users');
+	
+	users.find({session:session}, function(e, docs){
+		if(!e && !!docs[0]){
+			next(null, docs[0].subscriptions);
+		}else{
+			next(e || 'no docs');
 		}
 	})
 }
