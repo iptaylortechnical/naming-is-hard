@@ -5,7 +5,8 @@ var info = require('../utilities/info');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
-res.cookie("session", "", { expires: new Date() });
+	res.clearCookie('session');
+	res.end();
 	
 });
 
