@@ -17,7 +17,7 @@ var hasCallbackBeenSet = {};
 //TODO: VERY TEMPORARY
 var lastBody = '';
 
-var socket = io(PRODUCTION ? '' : ':3000');
+var socket = io(PRODUCTION ? ':80' : ':3000');
 
 
 socket.on('auth', function(){
