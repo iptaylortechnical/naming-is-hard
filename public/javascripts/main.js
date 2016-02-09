@@ -4,7 +4,7 @@ var amountOfBlocks = 0;
 
 var isAuthenticated = true;
 
-var PRODUCTION = false;
+var PRODUCTION = true;
 
 var modelBlocks = [];
 var shownBlocks = [];
