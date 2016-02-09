@@ -68,6 +68,8 @@ $(document).ready(function(){
 	$('.in').blur(updateBlocks);
 	$('.in').focus(updateBlocks);
 	
+	updateBlocks();
+	
 });
 
 function updateBlocks(){
@@ -96,7 +98,7 @@ function updateBlocks(){
 			}
 		}
 		
-		console.log(parts);
+		console.log('parts: ' + parts);
 		
 		for(var i = 0; i < parts.length; i++){
 			if(!hasCallbackBeenSet[parts[i]]){
