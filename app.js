@@ -16,6 +16,7 @@ var main = require('./routes/main');
 var authorize = require('./routes/authorize');
 var subscribe = require('./routes/subscribe');
 var getSubs = require('./routes/getSubscriptions');
+var logout = require('./routes/logout');
 
 var TEMPORARY_TIME_STAMP_START = 0;
 var TEMPORARY_TIME_STAMP_END = 0;
@@ -117,6 +118,7 @@ app.use('/', main);
 app.use('/auth', authorize);
 app.use('/subscribe', subscribe);
 app.use('/getsubs', getSubs);
+app.use('/logout', logout);
 
 // error handlers
 
