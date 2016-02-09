@@ -19,6 +19,7 @@ var lastBody = '';
 
 var socket = io(PRODUCTION ? '' : ':3000');
 
+
 socket.on('auth', function(){
 	console.log('got auth request, sending cookie');
 	socket.emit('authresponse', $.cookie('session'));
