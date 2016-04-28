@@ -1,0 +1,1059 @@
+2016-04-28T01:35:30.112172+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m2.958 ms - -[0m
+2016-04-28T01:35:30.124450+00:00 app[web.1]: [0mGET /r/realtalk [36m304 [0m4.298 ms - -[0m
+2016-04-28T01:35:30.131407+00:00 app[web.1]: [0mGET /r/michael [36m304 [0m13.894 ms - -[0m
+2016-04-28T01:35:30.132601+00:00 app[web.1]: [0mGET /r/Pravda [36m304 [0m12.125 ms - -[0m
+2016-04-28T01:35:30.157531+00:00 app[web.1]: [0mGET /r/toadd [36m304 [0m3.193 ms - -[0m
+2016-04-28T01:35:30.181966+00:00 app[web.1]: 50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9
+2016-04-28T01:35:30.181951+00:00 app[web.1]: got auth response
+2016-04-28T01:35:34.748796+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m3.413 ms - -[0m
+2016-04-28T01:35:35.885492+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m30.942 ms - -[0m
+2016-04-28T02:06:13.611668+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m2.086 ms - 774[0m
+2016-04-28T02:06:13.686876+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m8.429 ms - 1186[0m
+2016-04-28T02:06:13.518149+00:00 app[web.1]: [0mGET / [32m200 [0m1.450 ms - 1019[0m
+2016-04-28T02:06:13.695088+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m16.090 ms - 2130[0m
+2016-04-28T02:21:34.585749+00:00 app[web.1]: [0mGET / [36m304 [0m11.512 ms - -[0m
+2016-04-28T02:21:34.943420+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m1.001 ms - -[0m
+2016-04-28T02:21:34.880417+00:00 app[web.1]: [0mGET /css/main-normalize.css [36m304 [0m1.007 ms - -[0m
+2016-04-28T02:21:34.949013+00:00 app[web.1]: [0mGET /javascripts/main.js [36m304 [0m1.141 ms - -[0m
+2016-04-28T02:21:34.947430+00:00 app[web.1]: [0mGET /css/main-style.css [36m304 [0m2.988 ms - -[0m
+2016-04-28T02:21:35.013954+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m0.728 ms - -[0m
+2016-04-28T02:21:35.174664+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:21:35.224498+00:00 app[web.1]: [0mGET /getsubs?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9 [36m304 [0m7.333 ms - -[0m
+2016-04-28T02:21:35.303688+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m3.107 ms - -[0m
+2016-04-28T02:21:35.372116+00:00 app[web.1]: got auth response
+2016-04-28T02:21:35.372210+00:00 app[web.1]: 50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9
+2016-04-28T02:21:35.594555+00:00 app[web.1]: [0mGET /r/michael [36m304 [0m290.391 ms - -[0m
+2016-04-28T02:21:35.598149+00:00 app[web.1]: [0mGET /r/realtalk [36m304 [0m289.408 ms - -[0m
+2016-04-28T02:21:35.598790+00:00 app[web.1]: [0mGET /r/toadd [36m304 [0m239.671 ms - -[0m
+2016-04-28T02:21:35.599770+00:00 app[web.1]: [0mGET /r/Pravda [36m304 [0m285.367 ms - -[0m
+2016-04-28T02:24:39.367620+00:00 app[web.1]: 
+2016-04-28T02:24:39.367641+00:00 app[web.1]: > naming-is-hard@0.0.0 start /app
+2016-04-28T02:24:39.367653+00:00 app[web.1]: > node ./bin/www
+2016-04-28T02:24:39.367654+00:00 app[web.1]: 
+2016-04-28T02:24:39.548882+00:00 app[web.1]: module.js:341
+2016-04-28T02:24:39.548893+00:00 app[web.1]:     throw err;
+2016-04-28T02:24:39.548894+00:00 app[web.1]:     ^
+2016-04-28T02:24:39.548895+00:00 app[web.1]: 
+2016-04-28T02:24:39.548896+00:00 app[web.1]: Error: Cannot find module './lib/mongodb'
+2016-04-28T02:24:39.548897+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:339:15)
+2016-04-28T02:24:39.548898+00:00 app[web.1]:     at Function.Module._load (module.js:290:25)
+2016-04-28T02:24:39.548898+00:00 app[web.1]:     at Module.require (module.js:367:17)
+2016-04-28T02:24:39.548899+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2016-04-28T02:24:39.548900+00:00 app[web.1]:     at Object.<anonymous> (/app/node_modules/mongodb/index.js:1:80)
+2016-04-28T02:24:39.548900+00:00 app[web.1]:     at Module._compile (module.js:413:34)
+2016-04-28T02:24:39.548901+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
+2016-04-28T02:24:39.548902+00:00 app[web.1]:     at Module.load (module.js:357:32)
+2016-04-28T02:24:39.548903+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
+2016-04-28T02:24:39.548903+00:00 app[web.1]:     at Module.require (module.js:367:17)
+2016-04-28T02:24:39.556116+00:00 app[web.1]: 
+2016-04-28T02:24:39.563093+00:00 app[web.1]: npm ERR! Linux 3.13.0-79-generic
+2016-04-28T02:24:39.563481+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-04-28T02:24:39.563732+00:00 app[web.1]: npm ERR! node v5.11.0
+2016-04-28T02:24:39.564272+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-04-28T02:24:39.564712+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-04-28T02:24:39.564893+00:00 app[web.1]: npm ERR! naming-is-hard@0.0.0 start: `node ./bin/www`
+2016-04-28T02:24:39.565037+00:00 app[web.1]: npm ERR! Exit status 1
+2016-04-28T02:24:39.565221+00:00 app[web.1]: npm ERR! 
+2016-04-28T02:24:39.565363+00:00 app[web.1]: npm ERR! Failed at the naming-is-hard@0.0.0 start script 'node ./bin/www'.
+2016-04-28T02:24:39.565521+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-04-28T02:24:39.565681+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the naming-is-hard package,
+2016-04-28T02:24:39.565826+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-04-28T02:24:39.565999+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-04-28T02:24:39.566155+00:00 app[web.1]: npm ERR!     node ./bin/www
+2016-04-28T02:24:39.566309+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-04-28T02:24:39.566463+00:00 app[web.1]: npm ERR!     npm bugs naming-is-hard
+2016-04-28T02:24:39.566616+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-04-28T02:24:39.566774+00:00 app[web.1]: npm ERR!     npm owner ls naming-is-hard
+2016-04-28T02:24:39.566928+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-04-28T02:24:39.570231+00:00 app[web.1]: 
+2016-04-28T02:24:39.570445+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-04-28T02:24:39.570593+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-04-28T02:24:48.569391+00:00 app[web.1]: 
+2016-04-28T02:24:48.569409+00:00 app[web.1]: > naming-is-hard@0.0.0 start /app
+2016-04-28T02:24:48.569415+00:00 app[web.1]: > node ./bin/www
+2016-04-28T02:24:48.569417+00:00 app[web.1]: 
+2016-04-28T02:24:48.905590+00:00 app[web.1]: module.js:341
+2016-04-28T02:24:48.905598+00:00 app[web.1]:     throw err;
+2016-04-28T02:24:48.905599+00:00 app[web.1]:     ^
+2016-04-28T02:24:48.905600+00:00 app[web.1]: 
+2016-04-28T02:24:48.905601+00:00 app[web.1]: Error: Cannot find module './lib/mongodb'
+2016-04-28T02:24:48.905602+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:339:15)
+2016-04-28T02:24:48.905602+00:00 app[web.1]:     at Function.Module._load (module.js:290:25)
+2016-04-28T02:24:48.905603+00:00 app[web.1]:     at Module.require (module.js:367:17)
+2016-04-28T02:24:48.905604+00:00 app[web.1]:     at require (internal/module.js:20:19)
+2016-04-28T02:24:48.905604+00:00 app[web.1]:     at Object.<anonymous> (/app/node_modules/mongodb/index.js:1:80)
+2016-04-28T02:24:48.905605+00:00 app[web.1]:     at Module._compile (module.js:413:34)
+2016-04-28T02:24:48.905606+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:422:10)
+2016-04-28T02:24:48.905606+00:00 app[web.1]:     at Module.load (module.js:357:32)
+2016-04-28T02:24:48.905607+00:00 app[web.1]:     at Function.Module._load (module.js:314:12)
+2016-04-28T02:24:48.905607+00:00 app[web.1]:     at Module.require (module.js:367:17)
+2016-04-28T02:24:48.934460+00:00 app[web.1]: npm ERR! Linux 3.13.0-79-generic
+2016-04-28T02:24:48.921547+00:00 app[web.1]: 
+2016-04-28T02:24:48.935146+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2016-04-28T02:24:48.935584+00:00 app[web.1]: npm ERR! node v5.11.0
+2016-04-28T02:24:48.936697+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-04-28T02:24:48.937078+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-04-28T02:24:48.937393+00:00 app[web.1]: npm ERR! naming-is-hard@0.0.0 start: `node ./bin/www`
+2016-04-28T02:24:48.937691+00:00 app[web.1]: npm ERR! Exit status 1
+2016-04-28T02:24:48.938020+00:00 app[web.1]: npm ERR! 
+2016-04-28T02:24:48.938344+00:00 app[web.1]: npm ERR! Failed at the naming-is-hard@0.0.0 start script 'node ./bin/www'.
+2016-04-28T02:24:48.938879+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2016-04-28T02:24:48.939159+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the naming-is-hard package,
+2016-04-28T02:24:48.939445+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-04-28T02:24:48.939755+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2016-04-28T02:24:48.940087+00:00 app[web.1]: npm ERR!     node ./bin/www
+2016-04-28T02:24:48.940389+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2016-04-28T02:24:48.940627+00:00 app[web.1]: npm ERR!     npm bugs naming-is-hard
+2016-04-28T02:24:48.940928+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2016-04-28T02:24:48.941223+00:00 app[web.1]: npm ERR!     npm owner ls naming-is-hard
+2016-04-28T02:24:48.941478+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2016-04-28T02:24:48.946658+00:00 app[web.1]: 
+2016-04-28T02:24:48.947294+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2016-04-28T02:24:48.947592+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-04-28T02:31:59.387098+00:00 app[web.1]: 
+2016-04-28T02:31:59.387114+00:00 app[web.1]: > kerberos@0.0.11 install /app/node_modules/kerberos
+2016-04-28T02:31:59.387120+00:00 app[web.1]: > (node-gyp rebuild 2> builderror.log) || (exit 0)
+2016-04-28T02:31:59.387121+00:00 app[web.1]: 
+2016-04-28T02:32:01.778798+00:00 app[web.1]:   CXX(target) Release/obj.target/kerberos/lib/kerberos.o
+2016-04-28T02:32:01.774676+00:00 app[web.1]: make: Entering directory `/app/node_modules/kerberos/build'
+2016-04-28T02:32:02.425628+00:00 app[web.1]: > (node-gyp rebuild 2> builderror.log) || (exit 0)
+2016-04-28T02:32:02.403563+00:00 app[web.1]: make: Leaving directory `/app/node_modules/kerberos/build'
+2016-04-28T02:32:02.425626+00:00 app[web.1]: > bson@0.2.22 install /app/node_modules/bson
+2016-04-28T02:32:02.425628+00:00 app[web.1]: 
+2016-04-28T02:32:02.425616+00:00 app[web.1]: 
+2016-04-28T02:32:03.828980+00:00 app[web.1]:   CXX(target) Release/obj.target/bson/ext/bson.o
+2016-04-28T02:32:03.828971+00:00 app[web.1]: make: Entering directory `/app/node_modules/bson/build'
+2016-04-28T02:32:05.666923+00:00 app[web.1]: - mongodb-core@1.3.18 node_modules/mongodb-core
+2016-04-28T02:32:05.666590+00:00 app[web.1]: - resolve-from@2.0.0 node_modules/resolve-from
+2016-04-28T02:32:05.423626+00:00 app[web.1]: make: Leaving directory `/app/node_modules/bson/build'
+2016-04-28T02:32:05.666654+00:00 app[web.1]: - semver@5.1.0 node_modules/semver
+2016-04-28T02:32:05.666726+00:00 app[web.1]: - require_optional@1.0.0 node_modules/require_optional
+2016-04-28T02:32:05.666860+00:00 app[web.1]: - es6-promise@3.0.2 node_modules/es6-promise
+2016-04-28T02:32:06.301620+00:00 app[web.1]: `-- mongodb@1.4.40 
+2016-04-28T02:32:06.301622+00:00 app[web.1]:   | `-- nan@1.8.4 
+2016-04-28T02:32:06.301626+00:00 app[web.1]:     +-- inline-process-browser@2.0.1 
+2016-04-28T02:32:06.301622+00:00 app[web.1]:   +-- kerberos@0.0.11 
+2016-04-28T02:32:06.301612+00:00 app[web.1]: naming-is-hard@0.0.0 /app
+2016-04-28T02:32:06.301625+00:00 app[web.1]:   `-- readable-stream@2.1.0 
+2016-04-28T02:32:06.301621+00:00 app[web.1]:   +-- bson@0.2.22 
+2016-04-28T02:32:06.301628+00:00 app[web.1]:     | | `-- object-keys@1.0.9 
+2016-04-28T02:32:06.301629+00:00 app[web.1]:     |   +-- readable-stream@1.0.34 
+2016-04-28T02:32:06.301627+00:00 app[web.1]:     | | +-- acorn@1.2.2 
+2016-04-28T02:32:06.301626+00:00 app[web.1]:     | +-- falafel@1.2.0 
+2016-04-28T02:32:06.301627+00:00 app[web.1]:     | | +-- foreach@2.0.5 
+2016-04-28T02:32:06.301628+00:00 app[web.1]:     | `-- through2@0.6.5 
+2016-04-28T02:32:06.301630+00:00 app[web.1]:     +-- isarray@1.0.0 
+2016-04-28T02:32:06.301631+00:00 app[web.1]:     +-- process-nextick-args@1.0.6 
+2016-04-28T02:32:06.301630+00:00 app[web.1]:     |   `-- xtend@4.0.1 
+2016-04-28T02:32:06.301633+00:00 app[web.1]:     |   +-- esprima@2.7.2 
+2016-04-28T02:32:06.301633+00:00 app[web.1]:     |   +-- ast-types@0.8.16 
+2016-04-28T02:32:06.301632+00:00 app[web.1]:     | +-- esmangle-evaluator@1.0.0 
+2016-04-28T02:32:06.301632+00:00 app[web.1]:     | `-- recast@0.11.5 
+2016-04-28T02:32:06.301635+00:00 app[web.1]:     `-- util-deprecate@1.0.2 
+2016-04-28T02:32:06.301635+00:00 app[web.1]:     |   `-- source-map@0.5.5 
+2016-04-28T02:32:06.301631+00:00 app[web.1]:     +-- unreachable-branch-transform@0.5.1 
+2016-04-28T02:32:06.301634+00:00 app[web.1]:     |   +-- private@0.1.6 
+2016-04-28T02:32:06.301636+00:00 app[web.1]: 
+2016-04-28T02:32:07.267950+00:00 app[web.1]: 
+2016-04-28T02:32:07.267959+00:00 app[web.1]: > naming-is-hard@0.0.0 start /app
+2016-04-28T02:32:07.267961+00:00 app[web.1]: 
+2016-04-28T02:32:07.267960+00:00 app[web.1]: > node ./bin/www
+2016-04-28T02:32:07.721767+00:00 app[web.1]: js-bson: Failed to load c++ bson extension, using pure JS version
+2016-04-28T02:32:07.879516+00:00 app[web.1]: MONGOLAB_URL: mongodb://heroku_m3qblrh9:78m9tgbj0970r7blbctgn8q5lo@ds055535.mongolab.com:55535/heroku_m3qblrh9
+2016-04-28T02:32:07.719962+00:00 app[web.1]: { [Error: Cannot find module '../build/Release/bson'] code: 'MODULE_NOT_FOUND' }
+2016-04-28T02:32:48.353853+00:00 app[web.1]: [0mGET / [32m200 [0m862.027 ms - 802[0m
+2016-04-28T02:32:48.615190+00:00 app[web.1]: [0mGET /css/main-normalize.css [32m200 [0m25.308 ms - 2100[0m
+2016-04-28T02:32:48.690958+00:00 app[web.1]: [0mGET /css/main-style.css [32m200 [0m46.645 ms - 1770[0m
+2016-04-28T02:32:48.696408+00:00 app[web.1]: [0mGET /javascripts/main.js [32m200 [0m48.869 ms - 7564[0m
+2016-04-28T02:32:48.704267+00:00 app[web.1]: [0mGET /css/main-tile-style.css [32m200 [0m33.463 ms - 28377[0m
+2016-04-28T02:32:48.838611+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m5.219 ms - -[0m
+2016-04-28T02:32:49.006607+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:32:49.035262+00:00 app[web.1]: [0mGET /getsubs?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9 [36m304 [0m24.747 ms - -[0m
+2016-04-28T02:32:49.170727+00:00 app[web.1]: got auth response
+2016-04-28T02:32:49.170779+00:00 app[web.1]: 50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9
+2016-04-28T02:32:49.280957+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m24.249 ms - -[0m
+2016-04-28T02:32:49.415522+00:00 app[web.1]: [0mGET /r/realtalk [36m304 [0m116.805 ms - -[0m
+2016-04-28T02:32:49.458973+00:00 app[web.1]: [0mGET /r/michael [36m304 [0m159.363 ms - -[0m
+2016-04-28T02:32:49.475191+00:00 app[web.1]: [0mGET /r/toadd [36m304 [0m148.574 ms - -[0m
+2016-04-28T02:32:49.477143+00:00 app[web.1]: [0mGET /r/Pravda [36m304 [0m168.940 ms - -[0m
+2016-04-28T02:33:05.130998+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m74.712 ms - -[0m
+2016-04-28T02:33:06.271410+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m7.851 ms - -[0m
+2016-04-28T02:33:11.973485+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m4.548 ms - -[0m
+2016-04-28T02:33:11.899134+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m5.682 ms - -[0m
+2016-04-28T02:33:12.668196+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m11.106 ms - -[0m
+2016-04-28T02:33:13.466141+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m10.870 ms - -[0m
+2016-04-28T02:33:14.133915+00:00 app[web.1]: message took 36
+2016-04-28T02:33:14.097470+00:00 app[web.1]: Received chat from 50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9 intended for /michael with body test
+2016-04-28T02:33:14.101565+00:00 app[web.1]: sending test to 50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9 from /michael
+2016-04-28T02:33:22.292845+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases=/michael,/realtalk,/Pravda,/toadd [36m304 [0m32.410 ms - -[0m
+2016-04-28T02:33:23.981495+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases= [36m304 [0m4.457 ms - -[0m
+2016-04-28T02:33:23.920826+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases= [32m200 [0m2.538 ms - 25[0m
+2016-04-28T02:33:25.377513+00:00 app[web.1]: [0mGET /subscribe?session=50ccfa135fe4208942d5e7536a2ebab1f82243c97b857ee51ab9d988ecb9afe9&phrases= [36m304 [0m25.502 ms - -[0m
+2016-04-28T02:33:29.895362+00:00 app[web.1]: [0mGET /logout [32m200 [0m19.655 ms - -[0m
+2016-04-28T02:33:32.689575+00:00 app[web.1]: [0mGET / [32m200 [0m334.007 ms - 923[0m
+2016-04-28T02:33:32.911038+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m3.390 ms - 1186[0m
+2016-04-28T02:33:32.924511+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m14.297 ms - 2180[0m
+2016-04-28T02:33:32.929602+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m2.233 ms - 774[0m
+2016-04-28T02:34:49.034116+00:00 app[web.1]: [0mGET / [32m200 [0m7.933 ms - 802[0m
+2016-04-28T02:34:49.122142+00:00 app[web.1]: [0mGET /css/main-tile-style.css [32m200 [0m4.185 ms - 28377[0m
+2016-04-28T02:34:49.206231+00:00 app[web.1]: [0mGET /javascripts/main.js [32m200 [0m5.357 ms - 7564[0m
+2016-04-28T02:34:49.214493+00:00 app[web.1]: [0mGET /css/main-style.css [32m200 [0m10.706 ms - 1770[0m
+2016-04-28T02:34:49.217428+00:00 app[web.1]: [0mGET /css/main-normalize.css [32m200 [0m5.162 ms - 2100[0m
+2016-04-28T02:34:49.334503+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:34:49.343221+00:00 app[web.1]: [0mGET /getsubs?session=57cd3d7b94ef93a17d84d820d0fa0ceab990a205140c9297546633259c645890 [32m200 [0m6.507 ms - 43[0m
+2016-04-28T02:34:49.576942+00:00 app[web.1]: got auth response
+2016-04-28T02:34:49.576958+00:00 app[web.1]: 57cd3d7b94ef93a17d84d820d0fa0ceab990a205140c9297546633259c645890
+2016-04-28T02:34:49.683167+00:00 app[web.1]: [0mGET /subscribe?session=57cd3d7b94ef93a17d84d820d0fa0ceab990a205140c9297546633259c645890&phrases=/michael [36m304 [0m20.256 ms - -[0m
+2016-04-28T02:34:49.732370+00:00 app[web.1]: [0mGET /r/michael [32m200 [0m71.401 ms - 30712[0m
+2016-04-28T02:34:53.563747+00:00 app[web.1]: [0mGET / [36m304 [0m5.744 ms - -[0m
+2016-04-28T02:34:53.646255+00:00 app[web.1]: [0mGET /css/main-normalize.css [36m304 [0m2.114 ms - -[0m
+2016-04-28T02:34:53.652276+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m3.144 ms - -[0m
+2016-04-28T02:34:53.657351+00:00 app[web.1]: [0mGET /css/main-style.css [36m304 [0m4.195 ms - -[0m
+2016-04-28T02:34:53.660323+00:00 app[web.1]: [0mGET /javascripts/main.js [36m304 [0m6.372 ms - -[0m
+2016-04-28T02:34:54.052075+00:00 app[web.1]: [0mGET /logout [32m200 [0m13.230 ms - -[0m
+2016-04-28T02:34:54.141473+00:00 app[web.1]: [0mGET /favicon.ico [33m404 [0m4.627 ms - 24[0m
+2016-04-28T02:34:55.623394+00:00 app[web.1]: [0mGET /logout [32m200 [0m1.133 ms - -[0m
+2016-04-28T02:34:55.710139+00:00 app[web.1]: [0mGET /favicon.ico [33m404 [0m1.744 ms - 24[0m
+2016-04-28T02:34:56.002158+00:00 app[web.1]: [0mGET /logout [32m200 [0m1.245 ms - -[0m
+2016-04-28T02:35:00.579770+00:00 app[web.1]: [0mGET / [32m200 [0m2.132 ms - 923[0m
+2016-04-28T02:35:00.624217+00:00 app[web.1]: [0mGET / [32m200 [0m1.350 ms - 923[0m
+2016-04-28T02:35:00.656697+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m2.370 ms - 774[0m
+2016-04-28T02:35:00.710750+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m1.655 ms - 774[0m
+2016-04-28T02:35:00.941124+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m2.721 ms - 2180[0m
+2016-04-28T02:35:00.945388+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m3.252 ms - 1186[0m
+2016-04-28T02:35:01.158158+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m2.653 ms - 2180[0m
+2016-04-28T02:35:01.168939+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m1.917 ms - 1186[0m
+2016-04-28T02:39:41.176012+00:00 app[web.1]: isaiah
+2016-04-28T02:39:41.182750+00:00 app[web.1]: user exists: false
+2016-04-28T02:39:41.191756+00:00 app[web.1]: [0mGET /auth?username=isaiah&password=password [32m200 [0m17.978 ms - 98[0m
+2016-04-28T02:39:41.281580+00:00 app[web.1]: [0mGET / [32m200 [0m5.106 ms - 802[0m
+2016-04-28T02:39:41.449541+00:00 app[web.1]: [0mGET /css/main-normalize.css [36m304 [0m4.534 ms - -[0m
+2016-04-28T02:39:41.521602+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m1.775 ms - -[0m
+2016-04-28T02:39:41.529455+00:00 app[web.1]: [0mGET /css/main-style.css [36m304 [0m8.831 ms - -[0m
+2016-04-28T02:39:41.571028+00:00 app[web.1]: [0mGET /javascripts/main.js [36m304 [0m2.244 ms - -[0m
+2016-04-28T02:39:41.596968+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m4.614 ms - -[0m
+2016-04-28T02:39:41.734988+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:39:41.761723+00:00 app[web.1]: [0mGET /getsubs?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 [32m200 [0m12.746 ms - 33[0m
+2016-04-28T02:39:41.962285+00:00 app[web.1]: got auth response
+2016-04-28T02:39:41.962301+00:00 app[web.1]: d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062
+2016-04-28T02:39:42.045014+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases= [32m200 [0m3.584 ms - 25[0m
+2016-04-28T02:39:43.418510+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases= [36m304 [0m1.411 ms - -[0m
+2016-04-28T02:39:44.162275+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases= [36m304 [0m1.253 ms - -[0m
+2016-04-28T02:39:45.568655+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases= [36m304 [0m1.575 ms - -[0m
+2016-04-28T02:39:46.659381+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases= [36m304 [0m3.436 ms - -[0m
+2016-04-28T02:39:50.248445+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/ [32m200 [0m7.617 ms - 14[0m
+2016-04-28T02:39:54.805988+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m9.187 ms - 61[0m
+2016-04-28T02:39:54.807842+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [32m200 [0m9.859 ms - 14[0m
+2016-04-28T02:39:54.906223+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m5.036 ms - -[0m
+2016-04-28T02:39:54.986831+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m9.688 ms - -[0m
+2016-04-28T02:40:20.243201+00:00 app[web.1]: [0mGET /r/ [32m- [0m- ms - -[0m
+2016-04-28T02:40:23.017346+00:00 app[web.1]: [0mGET / [32m200 [0m2.077 ms - 923[0m
+2016-04-28T02:40:23.316103+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m3.299 ms - 774[0m
+2016-04-28T02:40:23.449514+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m4.333 ms - 2180[0m
+2016-04-28T02:40:23.462078+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m1.401 ms - 1186[0m
+2016-04-28T02:40:33.249103+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body my friends?
+2016-04-28T02:40:33.254646+00:00 app[web.1]: sending my friends? to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:40:33.255204+00:00 app[web.1]: message took 7
+2016-04-28T02:40:41.317665+00:00 app[web.1]: Doveseyes
+2016-04-28T02:40:41.324369+00:00 app[web.1]: user exists: false
+2016-04-28T02:40:41.325981+00:00 app[web.1]: [0mGET /auth?username=Doveseyes&password=laccoe909 [32m200 [0m8.904 ms - 101[0m
+2016-04-28T02:40:44.297242+00:00 app[web.1]: [0mGET / [32m200 [0m8.546 ms - 802[0m
+2016-04-28T02:40:44.538943+00:00 app[web.1]: [0mGET /css/main-normalize.css [32m200 [0m2.317 ms - 2100[0m
+2016-04-28T02:40:44.549985+00:00 app[web.1]: [0mGET /css/main-tile-style.css [32m200 [0m5.743 ms - 28377[0m
+2016-04-28T02:40:44.562407+00:00 app[web.1]: [0mGET /css/main-style.css [32m200 [0m1.742 ms - 1770[0m
+2016-04-28T02:40:44.759318+00:00 app[web.1]: [0mGET /javascripts/main.js [32m200 [0m4.915 ms - 7564[0m
+2016-04-28T02:40:45.407707+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:40:45.438754+00:00 app[web.1]: [0mGET /getsubs?session=f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b [32m200 [0m15.257 ms - 33[0m
+2016-04-28T02:40:45.728946+00:00 app[web.1]: got auth response
+2016-04-28T02:40:45.728978+00:00 app[web.1]: f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b
+2016-04-28T02:40:45.932916+00:00 app[web.1]: [0mGET /subscribe?session=f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b&phrases= [32m200 [0m6.545 ms - 25[0m
+2016-04-28T02:40:52.320281+00:00 app[web.1]: [0mGET /subscribe?session=f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b&phrases= [36m304 [0m25.683 ms - -[0m
+2016-04-28T02:40:55.954353+00:00 app[web.1]: [0mGET /subscribe?session=f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b&phrases=/cc [32m200 [0m11.947 ms - 14[0m
+2016-04-28T02:40:56.341924+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m14.953 ms - 88[0m
+2016-04-28T02:40:56.977379+00:00 app[web.1]: [0mGET /subscribe?session=f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b&phrases=/cc [36m304 [0m3.676 ms - -[0m
+2016-04-28T02:41:05.394446+00:00 app[web.1]: sending Hello! to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:41:05.367585+00:00 app[web.1]: Received chat from f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b intended for /cc with body Hello!
+2016-04-28T02:41:05.394390+00:00 app[web.1]: message took 27
+2016-04-28T02:41:05.383485+00:00 app[web.1]: sending Hello! to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:41:05.394861+00:00 app[web.1]: message took 27
+2016-04-28T02:41:06.262220+00:00 app[web.1]: [0mGET / [32m200 [0m1.758 ms - 923[0m
+2016-04-28T02:41:06.351316+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m5.348 ms - 2180[0m
+2016-04-28T02:41:06.453441+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m38.302 ms - 774[0m
+2016-04-28T02:41:06.442620+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m29.297 ms - 1186[0m
+2016-04-28T02:41:06.465386+00:00 app[web.1]: [0mGET / [32m200 [0m11.523 ms - 923[0m
+2016-04-28T02:41:06.616367+00:00 app[web.1]: [0mGET /js/index.js [36m304 [0m2.624 ms - -[0m
+2016-04-28T02:41:06.549862+00:00 app[web.1]: [0mGET /css/reset.css [36m304 [0m5.159 ms - -[0m
+2016-04-28T02:41:06.617469+00:00 app[web.1]: [0mGET /css/style.css [36m304 [0m2.628 ms - -[0m
+2016-04-28T02:41:16.303893+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body ayy its olivia!
+2016-04-28T02:41:16.306432+00:00 app[web.1]: sending ayy its olivia! to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:41:16.306879+00:00 app[web.1]: message took 3
+2016-04-28T02:41:16.306976+00:00 app[web.1]: sending ayy its olivia! to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:41:16.310651+00:00 app[web.1]: message took 7
+2016-04-28T02:41:50.133538+00:00 app[web.1]: Received chat from f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b intended for /cc with body This is kind of a strange format for a mobile device, but cool!
+2016-04-28T02:41:50.140009+00:00 app[web.1]: sending This is kind of a strange format for a mobile device, but cool! to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:41:50.140414+00:00 app[web.1]: message took 7
+2016-04-28T02:41:50.140453+00:00 app[web.1]: sending This is kind of a strange format for a mobile device, but cool! to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:41:50.140715+00:00 app[web.1]: message took 7
+2016-04-28T02:42:16.320627+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body oh i havent built the mobile site yet
+2016-04-28T02:42:16.329338+00:00 app[web.1]: sending oh i havent built the mobile site yet to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:42:16.329359+00:00 app[web.1]: message took 6
+2016-04-28T02:42:16.329360+00:00 app[web.1]: sending oh i havent built the mobile site yet to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:42:16.329360+00:00 app[web.1]: message took 7
+2016-04-28T02:42:25.004355+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body i don't even know what it looks like on a phone lol
+2016-04-28T02:42:25.007033+00:00 app[web.1]: sending i don't even know what it looks like on a phone lol to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:42:25.008249+00:00 app[web.1]: message took 3
+2016-04-28T02:42:25.008316+00:00 app[web.1]: sending i don't even know what it looks like on a phone lol to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:42:25.008996+00:00 app[web.1]: message took 4
+2016-04-28T02:42:27.965032+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body is it bad?
+2016-04-28T02:42:27.968218+00:00 app[web.1]: message took 4
+2016-04-28T02:42:27.968308+00:00 app[web.1]: sending is it bad? to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:42:27.968819+00:00 app[web.1]: message took 4
+2016-04-28T02:42:27.967229+00:00 app[web.1]: sending is it bad? to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:43:08.520966+00:00 app[web.1]: sending It's not super bad, but you have to scroll around your screen to see the full picture to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:43:08.520351+00:00 app[web.1]: sending It's not super bad, but you have to scroll around your screen to see the full picture to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:43:08.520888+00:00 app[web.1]: message took 8
+2016-04-28T02:43:08.521309+00:00 app[web.1]: message took 9
+2016-04-28T02:43:08.512727+00:00 app[web.1]: Received chat from f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b intended for /cc with body It's not super bad, but you have to scroll around your screen to see the full picture
+2016-04-28T02:43:28.710350+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body rip. yeah i'll build the phone version eventually
+2016-04-28T02:43:28.713822+00:00 app[web.1]: sending rip. yeah i'll build the phone version eventually to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:43:28.714197+00:00 app[web.1]: message took 4
+2016-04-28T02:43:28.714203+00:00 app[web.1]: sending rip. yeah i'll build the phone version eventually to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:43:28.714485+00:00 app[web.1]: message took 4
+2016-04-28T02:44:18.293764+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body its pretty cool tho.  you can do as many channels as you want. just specify a channel by saying /channel and separate your channels with spaces
+2016-04-28T02:44:18.295790+00:00 app[web.1]: sending its pretty cool tho.  you can do as many channels as you want. just specify a channel by saying /channel and separate your channels with spaces to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:44:18.296243+00:00 app[web.1]: message took 3
+2016-04-28T02:44:18.296308+00:00 app[web.1]: sending its pretty cool tho.  you can do as many channels as you want. just specify a channel by saying /channel and separate your channels with spaces to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:44:18.297083+00:00 app[web.1]: message took 4
+2016-04-28T02:44:22.549074+00:00 app[web.1]: Received chat from f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b intended for /cc with body Sounds good! Is this chat public?
+2016-04-28T02:44:22.568166+00:00 app[web.1]: sending Sounds good! Is this chat public? to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:44:22.568643+00:00 app[web.1]: message took 20
+2016-04-28T02:44:22.568652+00:00 app[web.1]: sending Sounds good! Is this chat public? to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:44:22.568895+00:00 app[web.1]: message took 20
+2016-04-28T02:44:51.484096+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body Yep. Anyone who has /cc in the top bar can chat.
+2016-04-28T02:44:51.487299+00:00 app[web.1]: sending Yep. Anyone who has /cc in the top bar can chat. to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:44:51.488165+00:00 app[web.1]: message took 4
+2016-04-28T02:44:51.488239+00:00 app[web.1]: sending Yep. Anyone who has /cc in the top bar can chat. to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:44:51.488676+00:00 app[web.1]: message took 4
+2016-04-28T02:46:00.130249+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:46:00.424846+00:00 app[web.1]: got auth response
+2016-04-28T02:46:00.424864+00:00 app[web.1]: f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b
+2016-04-28T02:46:01.000594+00:00 app[web.1]: [0mGET /subscribe?session=f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b&phrases=/cc [36m304 [0m6.842 ms - -[0m
+2016-04-28T02:46:01.621955+00:00 app[web.1]: [0mGET / [32m200 [0m7.625 ms - 802[0m
+2016-04-28T02:46:01.959254+00:00 app[web.1]: [0mGET /css/main-normalize.css [36m304 [0m2.537 ms - -[0m
+2016-04-28T02:46:02.151759+00:00 app[web.1]: [0mGET /css/main-style.css [36m304 [0m1.403 ms - -[0m
+2016-04-28T02:46:01.975353+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m1.084 ms - -[0m
+2016-04-28T02:46:02.167835+00:00 app[web.1]: [0mGET /javascripts/main.js [36m304 [0m1.133 ms - -[0m
+2016-04-28T02:46:05.540737+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:46:05.568927+00:00 app[web.1]: [0mGET /getsubs?session=f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b [32m200 [0m27.250 ms - 38[0m
+2016-04-28T02:46:05.871259+00:00 app[web.1]: got auth response
+2016-04-28T02:46:05.871277+00:00 app[web.1]: f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b
+2016-04-28T02:46:06.106047+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m8.598 ms - 948[0m
+2016-04-28T02:46:06.079674+00:00 app[web.1]: [0mGET /subscribe?session=f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b&phrases=/cc [36m304 [0m8.155 ms - -[0m
+2016-04-28T02:46:21.117071+00:00 app[web.1]: Received chat from f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b intended for /cc with body Wow! 
+2016-04-28T02:46:21.124726+00:00 app[web.1]: message took 8
+2016-04-28T02:46:21.124320+00:00 app[web.1]: sending Wow!  to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:46:21.124780+00:00 app[web.1]: sending Wow!  to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:46:21.125070+00:00 app[web.1]: message took 9
+2016-04-28T02:48:23.985002+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:48:24.132203+00:00 app[web.1]: got auth response
+2016-04-28T02:48:24.132524+00:00 app[web.1]: d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062
+2016-04-28T02:48:24.216662+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m4.976 ms - -[0m
+2016-04-28T02:48:25.885306+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body mmhmm
+2016-04-28T02:48:25.887734+00:00 app[web.1]: sending mmhmm to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:48:25.888076+00:00 app[web.1]: message took 4
+2016-04-28T02:48:25.888111+00:00 app[web.1]: sending mmhmm to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:48:25.888196+00:00 app[web.1]: message took 4
+2016-04-28T02:49:24.110111+00:00 app[web.1]: [0mGET / [32m200 [0m1.369 ms - 923[0m
+2016-04-28T02:49:24.328366+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m1.723 ms - 774[0m
+2016-04-28T02:49:24.462449+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m1.686 ms - 1186[0m
+2016-04-28T02:49:24.498208+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m2.034 ms - 2180[0m
+2016-04-28T02:49:36.510962+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body where kevin at
+2016-04-28T02:49:36.516346+00:00 app[web.1]: sending where kevin at to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:49:36.517492+00:00 app[web.1]: message took 7
+2016-04-28T02:49:36.521939+00:00 app[web.1]: sending where kevin at to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:49:36.522089+00:00 app[web.1]: message took 12
+2016-04-28T02:49:48.807574+00:00 app[web.1]: kcjr98
+2016-04-28T02:49:48.812247+00:00 app[web.1]: user exists: false
+2016-04-28T02:49:48.813802+00:00 app[web.1]: [0mGET /auth?username=kcjr98&password=kcjbsa10 [32m200 [0m8.801 ms - 98[0m
+2016-04-28T02:49:51.660087+00:00 app[web.1]: [0mGET / [32m200 [0m276.724 ms - 802[0m
+2016-04-28T02:49:51.831520+00:00 app[web.1]: [0mGET /css/main-normalize.css [32m200 [0m1.696 ms - 2100[0m
+2016-04-28T02:49:51.845255+00:00 app[web.1]: [0mGET /css/main-tile-style.css [32m200 [0m5.350 ms - 28377[0m
+2016-04-28T02:49:51.846075+00:00 app[web.1]: [0mGET /css/main-style.css [32m200 [0m3.034 ms - 1770[0m
+2016-04-28T02:49:51.983080+00:00 app[web.1]: [0mGET /javascripts/main.js [32m200 [0m1.588 ms - 7564[0m
+2016-04-28T02:49:54.642034+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:49:54.696950+00:00 app[web.1]: [0mGET /getsubs?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 [32m200 [0m6.964 ms - 33[0m
+2016-04-28T02:49:54.880781+00:00 app[web.1]: got auth response
+2016-04-28T02:49:54.880810+00:00 app[web.1]: f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84
+2016-04-28T02:49:54.992326+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases= [32m200 [0m3.477 ms - 25[0m
+2016-04-28T02:50:08.053418+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases= [36m304 [0m1.411 ms - -[0m
+2016-04-28T02:50:17.610660+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [32m200 [0m4659.990 ms - 14[0m
+2016-04-28T02:50:17.629561+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m4670.373 ms - 1059[0m
+2016-04-28T02:50:48.429205+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body Interesting
+2016-04-28T02:50:48.438391+00:00 app[web.1]: sending Interesting to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:50:48.438769+00:00 app[web.1]: message took 9
+2016-04-28T02:50:48.438813+00:00 app[web.1]: sending Interesting to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:50:48.438910+00:00 app[web.1]: message took 9
+2016-04-28T02:50:48.438945+00:00 app[web.1]: sending Interesting to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:50:48.439446+00:00 app[web.1]: message took 10
+2016-04-28T02:51:28.305558+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body yep
+2016-04-28T02:51:28.312937+00:00 app[web.1]: sending yep to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:51:28.313293+00:00 app[web.1]: message took 8
+2016-04-28T02:51:28.313334+00:00 app[web.1]: sending yep to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:51:28.313417+00:00 app[web.1]: message took 8
+2016-04-28T02:51:28.315560+00:00 app[web.1]: sending yep to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:51:28.315858+00:00 app[web.1]: message took 10
+2016-04-28T02:51:35.487155+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body Good work Isaiah!
+2016-04-28T02:51:35.489118+00:00 app[web.1]: sending Good work Isaiah! to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:51:35.489442+00:00 app[web.1]: message took 2
+2016-04-28T02:51:35.489486+00:00 app[web.1]: sending Good work Isaiah! to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:51:35.489574+00:00 app[web.1]: message took 2
+2016-04-28T02:51:35.489624+00:00 app[web.1]: sending Good work Isaiah! to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:51:35.489903+00:00 app[web.1]: message took 2
+2016-04-28T02:51:43.658982+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body try typing a space and then /basketball after /cc
+2016-04-28T02:51:43.670166+00:00 app[web.1]: sending try typing a space and then /basketball after /cc to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:51:43.670177+00:00 app[web.1]: message took 6
+2016-04-28T02:51:43.670179+00:00 app[web.1]: sending try typing a space and then /basketball after /cc to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:51:43.670179+00:00 app[web.1]: message took 9
+2016-04-28T02:51:43.670180+00:00 app[web.1]: sending try typing a space and then /basketball after /cc to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:51:43.670181+00:00 app[web.1]: message took 9
+2016-04-28T02:51:45.155814+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m5.613 ms - -[0m
+2016-04-28T02:51:47.941373+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketbal [32m200 [0m5.686 ms - 14[0m
+2016-04-28T02:51:48.033217+00:00 app[web.1]: [0mGET /r/basketbal [32m200 [0m7.556 ms - 68[0m
+2016-04-28T02:51:49.784037+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [32m200 [0m4.002 ms - 14[0m
+2016-04-28T02:51:49.824673+00:00 app[web.1]: [0mGET /r/basketball [32m200 [0m3.576 ms - 69[0m
+2016-04-28T02:51:49.909856+00:00 app[web.1]: [0mGET /r/basketball [36m304 [0m6.056 ms - -[0m
+2016-04-28T02:51:49.911238+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m6.344 ms - -[0m
+2016-04-28T02:51:50.457474+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m8.680 ms - -[0m
+2016-04-28T02:52:07.754729+00:00 app[web.1]: [0mGET / [32m200 [0m2.729 ms - 923[0m
+2016-04-28T02:52:07.995361+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m3.438 ms - 2180[0m
+2016-04-28T02:52:07.858595+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m3.403 ms - 774[0m
+2016-04-28T02:52:07.973949+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m10.551 ms - 1186[0m
+2016-04-28T02:52:20.188727+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body  /cc /basketball
+2016-04-28T02:52:20.190871+00:00 app[web.1]: sending  /cc /basketball to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:52:20.191580+00:00 app[web.1]: message took 3
+2016-04-28T02:52:20.191658+00:00 app[web.1]: sending  /cc /basketball to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:52:20.191766+00:00 app[web.1]: message took 3
+2016-04-28T02:52:20.191838+00:00 app[web.1]: sending  /cc /basketball to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:52:20.192130+00:00 app[web.1]: message took 4
+2016-04-28T02:52:26.056375+00:00 app[web.1]: /cc
+2016-04-28T02:52:26.058603+00:00 app[web.1]: user exists: false
+2016-04-28T02:52:26.066365+00:00 app[web.1]: [0mGET /auth?username=/cc&password= [32m200 [0m10.201 ms - 95[0m
+2016-04-28T02:52:26.141010+00:00 app[web.1]: [0mGET / [32m200 [0m8.151 ms - 802[0m
+2016-04-28T02:52:26.216498+00:00 app[web.1]: [0mGET /css/main-normalize.css [32m200 [0m15.126 ms - 2100[0m
+2016-04-28T02:52:26.220204+00:00 app[web.1]: [0mGET /css/main-tile-style.css [32m200 [0m2.566 ms - 28377[0m
+2016-04-28T02:52:26.219163+00:00 app[web.1]: [0mGET /css/main-style.css [32m200 [0m15.679 ms - 1770[0m
+2016-04-28T02:52:26.253612+00:00 app[web.1]: [0mGET /javascripts/main.js [32m200 [0m1.909 ms - 7564[0m
+2016-04-28T02:52:26.666625+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body  /cc/basketball
+2016-04-28T02:52:26.669676+00:00 app[web.1]: sending  /cc/basketball to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:52:26.670219+00:00 app[web.1]: message took 4
+2016-04-28T02:52:26.670243+00:00 app[web.1]: sending  /cc/basketball to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:52:26.670348+00:00 app[web.1]: message took 4
+2016-04-28T02:52:26.670386+00:00 app[web.1]: sending  /cc/basketball to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:52:26.670652+00:00 app[web.1]: message took 4
+2016-04-28T02:52:26.803407+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:52:26.957253+00:00 app[web.1]: got auth response
+2016-04-28T02:52:26.957279+00:00 app[web.1]: 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662
+2016-04-28T02:52:27.668952+00:00 app[web.1]: [0mGET /getsubs?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 [32m200 [0m859.842 ms - 33[0m
+2016-04-28T02:52:27.767094+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases= [32m200 [0m1.461 ms - 25[0m
+2016-04-28T02:52:28.401990+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body in the top bar thingy
+2016-04-28T02:52:28.404872+00:00 app[web.1]: sending in the top bar thingy to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:52:28.405350+00:00 app[web.1]: message took 4
+2016-04-28T02:52:28.405410+00:00 app[web.1]: sending in the top bar thingy to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:52:28.405520+00:00 app[web.1]: message took 4
+2016-04-28T02:52:28.405562+00:00 app[web.1]: sending in the top bar thingy to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:52:28.405882+00:00 app[web.1]: message took 4
+2016-04-28T02:52:31.431383+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases= [36m304 [0m2.600 ms - -[0m
+2016-04-28T02:52:36.385445+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases=/cc [32m200 [0m4.962 ms - 14[0m
+2016-04-28T02:52:36.401415+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m8.475 ms - 1387[0m
+2016-04-28T02:52:36.792877+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases=/cc [36m304 [0m4.066 ms - -[0m
+2016-04-28T02:52:39.641739+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body Oh duh
+2016-04-28T02:52:39.648285+00:00 app[web.1]: sending Oh duh to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:52:39.648666+00:00 app[web.1]: message took 7
+2016-04-28T02:52:39.648699+00:00 app[web.1]: sending Oh duh to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:52:39.648786+00:00 app[web.1]: message took 7
+2016-04-28T02:52:39.648832+00:00 app[web.1]: sending Oh duh to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:52:39.649098+00:00 app[web.1]: message took 8
+2016-04-28T02:52:39.649142+00:00 app[web.1]: sending Oh duh to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:52:39.649580+00:00 app[web.1]: message took 8
+2016-04-28T02:52:42.082708+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body lel
+2016-04-28T02:52:42.085386+00:00 app[web.1]: sending lel to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:52:42.085996+00:00 app[web.1]: message took 3
+2016-04-28T02:52:42.086061+00:00 app[web.1]: sending lel to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:52:42.086173+00:00 app[web.1]: message took 4
+2016-04-28T02:52:42.086227+00:00 app[web.1]: sending lel to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:52:42.088793+00:00 app[web.1]: message took 6
+2016-04-28T02:52:42.088871+00:00 app[web.1]: sending lel to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:52:42.089239+00:00 app[web.1]: message took 7
+2016-04-28T02:52:42.411469+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [36m304 [0m18.301 ms - -[0m
+2016-04-28T02:52:46.321472+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /basketball with body hallo
+2016-04-28T02:52:46.341966+00:00 app[web.1]: sending hallo to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /basketball
+2016-04-28T02:52:46.341976+00:00 app[web.1]: message took 20
+2016-04-28T02:52:46.401016+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc/ [32m200 [0m12.856 ms - 14[0m
+2016-04-28T02:52:46.531530+00:00 app[web.1]: [0mGET /r/cc/ [32m200 [0m9.985 ms - 1452[0m
+2016-04-28T02:52:50.785344+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc/bas [32m200 [0m15.782 ms - 14[0m
+2016-04-28T02:52:50.786704+00:00 app[web.1]: [0mGET /r/cc/bas [32m200 [0m16.509 ms - 1452[0m
+2016-04-28T02:52:54.363220+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc/basketball [32m200 [0m22.565 ms - 14[0m
+2016-04-28T02:52:54.364750+00:00 app[web.1]: [0mGET /r/cc/basketball [32m200 [0m23.474 ms - 1452[0m
+2016-04-28T02:52:54.857581+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc/basketball [36m304 [0m12.509 ms - -[0m
+2016-04-28T02:52:54.873342+00:00 app[web.1]: [0mGET /r/cc/basketball [36m304 [0m15.014 ms - -[0m
+2016-04-28T02:52:54.984938+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases=/cc [36m304 [0m8.758 ms - -[0m
+2016-04-28T02:52:55.043617+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc/basketball [36m304 [0m5.659 ms - -[0m
+2016-04-28T02:52:55.052168+00:00 app[web.1]: [0mGET /r/cc/basketball [36m304 [0m4.044 ms - -[0m
+2016-04-28T02:53:03.094489+00:00 app[web.1]: Received chat from 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 intended for /cc with body Hello!
+2016-04-28T02:53:03.099235+00:00 app[web.1]: sending Hello! to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:53:03.099742+00:00 app[web.1]: message took 5
+2016-04-28T02:53:03.100655+00:00 app[web.1]: message took 6
+2016-04-28T02:53:03.100345+00:00 app[web.1]: sending Hello! to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:53:03.099779+00:00 app[web.1]: sending Hello! to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:53:03.100330+00:00 app[web.1]: message took 6
+2016-04-28T02:53:03.099862+00:00 app[web.1]: message took 5
+2016-04-28T02:53:03.099898+00:00 app[web.1]: sending Hello! to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:53:06.141408+00:00 app[web.1]: Received chat from 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 intended for /cc with body Hello!
+2016-04-28T02:53:11.098936+00:00 app[web.1]: sending Hello! to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:53:11.099291+00:00 app[web.1]: message took 4958
+2016-04-28T02:53:11.099332+00:00 app[web.1]: sending Hello! to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:53:11.099421+00:00 app[web.1]: message took 4958
+2016-04-28T02:53:11.099467+00:00 app[web.1]: sending Hello! to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:53:11.099731+00:00 app[web.1]: message took 4958
+2016-04-28T02:53:11.099758+00:00 app[web.1]: sending Hello! to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:53:11.100044+00:00 app[web.1]: message took 4958
+2016-04-28T02:53:13.392842+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body lol 
+2016-04-28T02:53:13.395463+00:00 app[web.1]: sending lol  to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:53:13.396045+00:00 app[web.1]: message took 3
+2016-04-28T02:53:13.396087+00:00 app[web.1]: sending lol  to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:53:13.396384+00:00 app[web.1]: message took 4
+2016-04-28T02:53:13.396425+00:00 app[web.1]: sending lol  to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:53:13.397130+00:00 app[web.1]: message took 5
+2016-04-28T02:53:13.397365+00:00 app[web.1]: sending lol  to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:53:13.398383+00:00 app[web.1]: message took 6
+2016-04-28T02:53:19.749185+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body who named themselves /cc?
+2016-04-28T02:53:19.751717+00:00 app[web.1]: sending who named themselves /cc? to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:53:19.752068+00:00 app[web.1]: message took 3
+2016-04-28T02:53:19.752110+00:00 app[web.1]: sending who named themselves /cc? to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:53:19.752190+00:00 app[web.1]: message took 3
+2016-04-28T02:53:19.752229+00:00 app[web.1]: sending who named themselves /cc? to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:53:19.752475+00:00 app[web.1]: message took 3
+2016-04-28T02:53:19.752517+00:00 app[web.1]: sending who named themselves /cc? to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:53:19.752779+00:00 app[web.1]: message took 3
+2016-04-28T02:53:22.732882+00:00 app[web.1]: Received chat from 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 intended for /cc with body This is Ethan
+2016-04-28T02:53:22.736593+00:00 app[web.1]: sending This is Ethan to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:53:22.736964+00:00 app[web.1]: sending This is Ethan to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:53:22.736927+00:00 app[web.1]: message took 4
+2016-04-28T02:53:22.737095+00:00 app[web.1]: sending This is Ethan to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:53:22.737071+00:00 app[web.1]: message took 5
+2016-04-28T02:53:22.737344+00:00 app[web.1]: message took 5
+2016-04-28T02:53:22.737384+00:00 app[web.1]: sending This is Ethan to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:53:22.737637+00:00 app[web.1]: message took 5
+2016-04-28T02:53:24.441969+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases=/cc [36m304 [0m9.571 ms - -[0m
+2016-04-28T02:53:27.842255+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases= [36m304 [0m1.582 ms - -[0m
+2016-04-28T02:53:30.097111+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body hi ethan
+2016-04-28T02:53:30.103722+00:00 app[web.1]: sending hi ethan to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:53:30.104137+00:00 app[web.1]: message took 7
+2016-04-28T02:53:30.104150+00:00 app[web.1]: sending hi ethan to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:53:30.104201+00:00 app[web.1]: message took 7
+2016-04-28T02:53:30.104235+00:00 app[web.1]: sending hi ethan to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:53:30.104488+00:00 app[web.1]: message took 7
+2016-04-28T02:53:30.104783+00:00 app[web.1]: message took 7
+2016-04-28T02:53:30.104511+00:00 app[web.1]: sending hi ethan to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:53:30.585094+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases= [36m304 [0m7.942 ms - -[0m
+2016-04-28T02:53:33.109921+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases= [36m304 [0m11.091 ms - -[0m
+2016-04-28T02:53:35.698246+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases= [36m304 [0m1.214 ms - -[0m
+2016-04-28T02:53:41.809626+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases=/cc [36m304 [0m8.789 ms - -[0m
+2016-04-28T02:53:41.869205+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m4.411 ms - 1673[0m
+2016-04-28T02:53:46.457758+00:00 app[web.1]: [0mGET /subscribe?session=08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662&phrases=/cc [36m304 [0m4.035 ms - -[0m
+2016-04-28T02:53:50.195071+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc/basketball [36m304 [0m8.486 ms - -[0m
+2016-04-28T02:53:50.201509+00:00 app[web.1]: [0mGET /r/cc/basketball [32m200 [0m5.864 ms - 1673[0m
+2016-04-28T02:53:55.467862+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [36m304 [0m5.704 ms - -[0m
+2016-04-28T02:53:55.873336+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [36m304 [0m5.172 ms - -[0m
+2016-04-28T02:53:55.884678+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [36m304 [0m3.719 ms - -[0m
+2016-04-28T02:53:57.892815+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body you can open channels by typing /[channel name] in the top bar
+2016-04-28T02:53:57.896618+00:00 app[web.1]: sending you can open channels by typing /[channel name] in the top bar to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:53:57.897450+00:00 app[web.1]: message took 5
+2016-04-28T02:53:57.897493+00:00 app[web.1]: sending you can open channels by typing /[channel name] in the top bar to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:53:57.897582+00:00 app[web.1]: message took 5
+2016-04-28T02:53:57.897614+00:00 app[web.1]: sending you can open channels by typing /[channel name] in the top bar to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:53:57.897859+00:00 app[web.1]: message took 5
+2016-04-28T02:53:57.897894+00:00 app[web.1]: sending you can open channels by typing /[channel name] in the top bar to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:53:57.898145+00:00 app[web.1]: message took 6
+2016-04-28T02:54:04.332338+00:00 app[web.1]: sending you can have as many open as you want to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:54:04.324408+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body you can have as many open as you want
+2016-04-28T02:54:04.332688+00:00 app[web.1]: message took 8
+2016-04-28T02:54:04.332816+00:00 app[web.1]: message took 8
+2016-04-28T02:54:04.333097+00:00 app[web.1]: message took 9
+2016-04-28T02:54:04.333134+00:00 app[web.1]: sending you can have as many open as you want to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:54:04.332844+00:00 app[web.1]: sending you can have as many open as you want to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:54:04.333386+00:00 app[web.1]: message took 9
+2016-04-28T02:54:04.332720+00:00 app[web.1]: sending you can have as many open as you want to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:54:10.378756+00:00 app[web.1]: Received chat from 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 intended for /cc with body Oh, I put what you said in the login screen too ;(
+2016-04-28T02:54:10.384415+00:00 app[web.1]: sending Oh, I put what you said in the login screen too ;( to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:54:10.384856+00:00 app[web.1]: message took 6
+2016-04-28T02:54:10.384889+00:00 app[web.1]: sending Oh, I put what you said in the login screen too ;( to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:54:10.385048+00:00 app[web.1]: message took 7
+2016-04-28T02:54:10.385084+00:00 app[web.1]: sending Oh, I put what you said in the login screen too ;( to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:54:10.385332+00:00 app[web.1]: message took 7
+2016-04-28T02:54:10.385372+00:00 app[web.1]: sending Oh, I put what you said in the login screen too ;( to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:54:10.385826+00:00 app[web.1]: message took 7
+2016-04-28T02:54:17.234907+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body like rn my top bar has /cc /basketball
+2016-04-28T02:54:17.238724+00:00 app[web.1]: sending like rn my top bar has /cc /basketball to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:54:17.239042+00:00 app[web.1]: message took 4
+2016-04-28T02:54:17.239075+00:00 app[web.1]: sending like rn my top bar has /cc /basketball to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:54:17.239168+00:00 app[web.1]: message took 5
+2016-04-28T02:54:17.239206+00:00 app[web.1]: sending like rn my top bar has /cc /basketball to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:54:17.239462+00:00 app[web.1]: message took 5
+2016-04-28T02:54:17.239500+00:00 app[web.1]: sending like rn my top bar has /cc /basketball to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:54:17.239759+00:00 app[web.1]: message took 5
+2016-04-28T02:54:27.608222+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body so i have the cc and basketball channels open
+2016-04-28T02:54:27.618957+00:00 app[web.1]: sending so i have the cc and basketball channels open to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T02:54:27.622399+00:00 app[web.1]: message took 14
+2016-04-28T02:54:27.622423+00:00 app[web.1]: sending so i have the cc and basketball channels open to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T02:54:27.623586+00:00 app[web.1]: message took 15
+2016-04-28T02:54:27.629799+00:00 app[web.1]: sending so i have the cc and basketball channels open to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T02:54:27.630178+00:00 app[web.1]: message took 22
+2016-04-28T02:54:27.630223+00:00 app[web.1]: sending so i have the cc and basketball channels open to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T02:54:27.630509+00:00 app[web.1]: message took 22
+2016-04-28T02:54:38.096158+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m3.670 ms - -[0m
+2016-04-28T02:54:54.457810+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m12.611 ms - -[0m
+2016-04-28T02:56:22.121300+00:00 app[web.1]: [0mGET / [36m304 [0m8.597 ms - -[0m
+2016-04-28T02:56:22.280003+00:00 app[web.1]: [0mGET /css/main-normalize.css [36m304 [0m1.462 ms - -[0m
+2016-04-28T02:56:22.349284+00:00 app[web.1]: [0mGET /css/main-style.css [36m304 [0m2.787 ms - -[0m
+2016-04-28T02:56:22.349753+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m2.482 ms - -[0m
+2016-04-28T02:56:22.392932+00:00 app[web.1]: [0mGET /javascripts/main.js [36m304 [0m1.008 ms - -[0m
+2016-04-28T02:56:22.423246+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m1.115 ms - -[0m
+2016-04-28T02:56:23.087200+00:00 app[web.1]: connected, sending auth request
+2016-04-28T02:56:23.112868+00:00 app[web.1]: [0mGET /getsubs?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 [32m200 [0m11.691 ms - 52[0m
+2016-04-28T02:56:23.269198+00:00 app[web.1]: got auth response
+2016-04-28T02:56:23.269213+00:00 app[web.1]: d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062
+2016-04-28T02:56:23.353190+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m7.290 ms - -[0m
+2016-04-28T02:56:23.365018+00:00 app[web.1]: [0mGET /r/basketball [32m200 [0m9.145 ms - 90[0m
+2016-04-28T02:56:23.366606+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m9.766 ms - 2042[0m
+2016-04-28T02:56:28.010099+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m3.877 ms - -[0m
+2016-04-28T02:56:33.973815+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m12.865 ms - -[0m
+2016-04-28T02:56:46.605400+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m4.505 ms - -[0m
+2016-04-28T02:56:48.958864+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m12.529 ms - -[0m
+2016-04-28T02:56:51.712425+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m6.956 ms - -[0m
+2016-04-28T02:57:01.142310+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m13.498 ms - -[0m
+2016-04-28T02:57:03.963568+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m14.700 ms - -[0m
+2016-04-28T02:57:05.630135+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m5.225 ms - -[0m
+2016-04-28T02:57:14.130608+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m4.467 ms - -[0m
+2016-04-28T03:01:04.003078+00:00 app[web.1]: got auth response
+2016-04-28T03:01:04.003099+00:00 app[web.1]: f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84
+2016-04-28T03:01:03.766367+00:00 app[web.1]: connected, sending auth request
+2016-04-28T03:01:04.257923+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [36m304 [0m3.885 ms - -[0m
+2016-04-28T03:01:04.520723+00:00 app[web.1]: [0mGET / [32m200 [0m9.300 ms - 802[0m
+2016-04-28T03:01:04.822733+00:00 app[web.1]: [0mGET /css/main-normalize.css [36m304 [0m3.399 ms - -[0m
+2016-04-28T03:01:04.913879+00:00 app[web.1]: [0mGET /css/main-style.css [36m304 [0m1.251 ms - -[0m
+2016-04-28T03:01:04.927988+00:00 app[web.1]: [0mGET /javascripts/main.js [36m304 [0m0.912 ms - -[0m
+2016-04-28T03:01:04.803221+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m3.378 ms - -[0m
+2016-04-28T03:01:05.157732+00:00 app[web.1]: connected, sending auth request
+2016-04-28T03:01:05.181057+00:00 app[web.1]: [0mGET /getsubs?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 [32m200 [0m6.288 ms - 38[0m
+2016-04-28T03:01:05.357602+00:00 app[web.1]: got auth response
+2016-04-28T03:01:05.357644+00:00 app[web.1]: f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84
+2016-04-28T03:01:05.515355+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m28.253 ms - 2042[0m
+2016-04-28T03:01:05.503807+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [36m304 [0m22.677 ms - -[0m
+2016-04-28T03:01:31.548316+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body yo
+2016-04-28T03:01:31.550537+00:00 app[web.1]: sending yo to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:01:31.550935+00:00 app[web.1]: message took 2
+2016-04-28T03:01:31.551386+00:00 app[web.1]: message took 3
+2016-04-28T03:01:31.551427+00:00 app[web.1]: sending yo to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:01:31.551755+00:00 app[web.1]: message took 3
+2016-04-28T03:01:31.551799+00:00 app[web.1]: sending yo to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:01:31.551881+00:00 app[web.1]: message took 3
+2016-04-28T03:01:31.550973+00:00 app[web.1]: sending yo to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:01:36.021240+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body I think typing the basketball link messed me up
+2016-04-28T03:01:36.031575+00:00 app[web.1]: sending I think typing the basketball link messed me up to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:01:36.032277+00:00 app[web.1]: message took 11
+2016-04-28T03:01:36.032354+00:00 app[web.1]: sending I think typing the basketball link messed me up to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:01:36.032466+00:00 app[web.1]: message took 11
+2016-04-28T03:01:36.032564+00:00 app[web.1]: sending I think typing the basketball link messed me up to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:01:36.033084+00:00 app[web.1]: message took 12
+2016-04-28T03:01:36.032898+00:00 app[web.1]: message took 11
+2016-04-28T03:01:36.032968+00:00 app[web.1]: sending I think typing the basketball link messed me up to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:01:46.528424+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body did you put a space in?
+2016-04-28T03:01:46.532007+00:00 app[web.1]: sending did you put a space in? to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:01:46.532502+00:00 app[web.1]: message took 4
+2016-04-28T03:01:46.532562+00:00 app[web.1]: sending did you put a space in? to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:01:46.532679+00:00 app[web.1]: message took 4
+2016-04-28T03:01:46.532726+00:00 app[web.1]: sending did you put a space in? to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:01:46.533094+00:00 app[web.1]: message took 5
+2016-04-28T03:01:46.533185+00:00 app[web.1]: sending did you put a space in? to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:01:46.533271+00:00 app[web.1]: message took 5
+2016-04-28T03:01:54.656796+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body like /cc /basketball
+2016-04-28T03:01:54.659213+00:00 app[web.1]: sending like /cc /basketball to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:01:54.659769+00:00 app[web.1]: message took 3
+2016-04-28T03:01:54.659854+00:00 app[web.1]: sending like /cc /basketball to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:01:54.659967+00:00 app[web.1]: message took 3
+2016-04-28T03:01:54.660047+00:00 app[web.1]: sending like /cc /basketball to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:01:54.660399+00:00 app[web.1]: message took 4
+2016-04-28T03:01:54.660551+00:00 app[web.1]: sending like /cc /basketball to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:01:54.660627+00:00 app[web.1]: message took 4
+2016-04-28T03:02:00.461603+00:00 app[web.1]: [0mGET / [32m200 [0m3.135 ms - 923[0m
+2016-04-28T03:02:00.756044+00:00 app[web.1]: [0mGET /css/reset.css [32m200 [0m3.600 ms - 774[0m
+2016-04-28T03:02:00.870921+00:00 app[web.1]: [0mGET /js/index.js [32m200 [0m4.200 ms - 1186[0m
+2016-04-28T03:02:00.877205+00:00 app[web.1]: [0mGET /css/style.css [32m200 [0m5.607 ms - 2180[0m
+2016-04-28T03:02:13.869736+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body Yeah
+2016-04-28T03:02:13.876134+00:00 app[web.1]: sending Yeah to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:02:13.876609+00:00 app[web.1]: message took 7
+2016-04-28T03:02:13.876638+00:00 app[web.1]: sending Yeah to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:02:13.876703+00:00 app[web.1]: message took 7
+2016-04-28T03:02:13.876740+00:00 app[web.1]: sending Yeah to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:02:13.877114+00:00 app[web.1]: message took 8
+2016-04-28T03:02:13.877152+00:00 app[web.1]: sending Yeah to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:02:13.877234+00:00 app[web.1]: message took 8
+2016-04-28T03:02:24.456498+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body weird
+2016-04-28T03:02:24.458302+00:00 app[web.1]: sending weird to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:02:24.458523+00:00 app[web.1]: message took 2
+2016-04-28T03:02:24.458593+00:00 app[web.1]: sending weird to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:02:24.458668+00:00 app[web.1]: message took 2
+2016-04-28T03:02:24.458885+00:00 app[web.1]: message took 2
+2016-04-28T03:02:24.458708+00:00 app[web.1]: sending weird to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:02:24.458935+00:00 app[web.1]: sending weird to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:02:24.459034+00:00 app[web.1]: message took 2
+2016-04-28T03:02:41.936257+00:00 app[web.1]: maggie.brosky
+2016-04-28T03:02:41.940224+00:00 app[web.1]: user exists: false
+2016-04-28T03:02:41.941914+00:00 app[web.1]: [0mGET /auth?username=maggie.brosky&password=Monypeny1 [32m200 [0m7.256 ms - 105[0m
+2016-04-28T03:02:42.236820+00:00 app[web.1]: [0mGET / [32m200 [0m3.874 ms - 802[0m
+2016-04-28T03:02:42.541194+00:00 app[web.1]: [0mGET /css/main-normalize.css [32m200 [0m3.860 ms - 2100[0m
+2016-04-28T03:02:42.658679+00:00 app[web.1]: [0mGET /css/main-style.css [32m200 [0m1.586 ms - 1770[0m
+2016-04-28T03:02:42.665789+00:00 app[web.1]: [0mGET /javascripts/main.js [32m200 [0m3.510 ms - 7564[0m
+2016-04-28T03:02:42.668631+00:00 app[web.1]: [0mGET /css/main-tile-style.css [32m200 [0m4.342 ms - 28377[0m
+2016-04-28T03:02:43.278825+00:00 app[web.1]: connected, sending auth request
+2016-04-28T03:02:43.288240+00:00 app[web.1]: [0mGET /getsubs?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 [32m200 [0m6.281 ms - 33[0m
+2016-04-28T03:02:43.580511+00:00 app[web.1]: got auth response
+2016-04-28T03:02:43.580638+00:00 app[web.1]: 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8
+2016-04-28T03:02:43.680616+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [32m200 [0m1.309 ms - 25[0m
+2016-04-28T03:02:49.982003+00:00 app[web.1]: [0mGET / [32m200 [0m20.370 ms - 802[0m
+2016-04-28T03:02:50.182213+00:00 app[web.1]: [0mGET /css/main-normalize.css [36m304 [0m1.185 ms - -[0m
+2016-04-28T03:02:50.191333+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m1.755 ms - -[0m
+2016-04-28T03:02:50.200406+00:00 app[web.1]: [0mGET /css/main-style.css [36m304 [0m1.168 ms - -[0m
+2016-04-28T03:02:50.212722+00:00 app[web.1]: [0mGET /javascripts/main.js [36m304 [0m1.709 ms - -[0m
+2016-04-28T03:02:50.345136+00:00 app[web.1]: connected, sending auth request
+2016-04-28T03:02:50.573423+00:00 app[web.1]: got auth response
+2016-04-28T03:02:50.357266+00:00 app[web.1]: [0mGET /getsubs?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 [36m304 [0m5.719 ms - -[0m
+2016-04-28T03:02:50.574455+00:00 app[web.1]: 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8
+2016-04-28T03:02:50.690948+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m2.654 ms - -[0m
+2016-04-28T03:02:51.726581+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m1.795 ms - -[0m
+2016-04-28T03:02:55.675183+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body anyway, it would be pretty cool if you could just like come on here and there are a bunch of other people talking about basketball
+2016-04-28T03:02:55.680248+00:00 app[web.1]: sending anyway, it would be pretty cool if you could just like come on here and there are a bunch of other people talking about basketball to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:02:55.680825+00:00 app[web.1]: message took 5
+2016-04-28T03:02:55.680861+00:00 app[web.1]: sending anyway, it would be pretty cool if you could just like come on here and there are a bunch of other people talking about basketball to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:02:55.680957+00:00 app[web.1]: message took 5
+2016-04-28T03:02:55.681012+00:00 app[web.1]: sending anyway, it would be pretty cool if you could just like come on here and there are a bunch of other people talking about basketball to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:02:55.681277+00:00 app[web.1]: message took 6
+2016-04-28T03:02:55.681315+00:00 app[web.1]: sending anyway, it would be pretty cool if you could just like come on here and there are a bunch of other people talking about basketball to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:02:55.681411+00:00 app[web.1]: message took 6
+2016-04-28T03:02:56.694377+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m1.297 ms - -[0m
+2016-04-28T03:02:56.699730+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m1.157 ms - -[0m
+2016-04-28T03:02:57.114327+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m1.553 ms - -[0m
+2016-04-28T03:02:57.625816+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m1.152 ms - -[0m
+2016-04-28T03:03:00.977279+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m1.243 ms - -[0m
+2016-04-28T03:03:04.268010+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m2.941 ms - -[0m
+2016-04-28T03:03:05.010510+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m1.461 ms - -[0m
+2016-04-28T03:04:41.914053+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m1.065 ms - -[0m
+2016-04-28T03:04:42.001805+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m7.051 ms - -[0m
+2016-04-28T03:04:42.595629+00:00 app[web.1]: connected, sending auth request
+2016-04-28T03:04:43.078925+00:00 app[web.1]: got auth response
+2016-04-28T03:04:43.219137+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases= [36m304 [0m2.347 ms - -[0m
+2016-04-28T03:04:43.078942+00:00 app[web.1]: 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8
+2016-04-28T03:04:46.446791+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc [32m200 [0m9.843 ms - 14[0m
+2016-04-28T03:04:46.481662+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m15.402 ms - 2469[0m
+2016-04-28T03:04:47.231338+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc [36m304 [0m26.077 ms - -[0m
+2016-04-28T03:05:07.897466+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc [36m304 [0m9.694 ms - -[0m
+2016-04-28T03:05:23.472000+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /cc with body Omg hi
+2016-04-28T03:05:23.476318+00:00 app[web.1]: sending Omg hi to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:05:23.476676+00:00 app[web.1]: message took 5
+2016-04-28T03:05:23.476708+00:00 app[web.1]: sending Omg hi to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:05:23.476808+00:00 app[web.1]: message took 5
+2016-04-28T03:05:23.476849+00:00 app[web.1]: sending Omg hi to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:05:23.476938+00:00 app[web.1]: message took 5
+2016-04-28T03:05:23.476991+00:00 app[web.1]: sending Omg hi to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:05:23.477087+00:00 app[web.1]: message took 6
+2016-04-28T03:05:23.477106+00:00 app[web.1]: sending Omg hi to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:05:23.482918+00:00 app[web.1]: message took 11
+2016-04-28T03:05:30.192011+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body hallo
+2016-04-28T03:05:30.197127+00:00 app[web.1]: sending hallo to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:05:30.197134+00:00 app[web.1]: message took 5
+2016-04-28T03:05:30.197135+00:00 app[web.1]: sending hallo to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:05:30.197136+00:00 app[web.1]: message took 5
+2016-04-28T03:05:30.197136+00:00 app[web.1]: sending hallo to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:05:30.197137+00:00 app[web.1]: message took 5
+2016-04-28T03:05:30.197141+00:00 app[web.1]: sending hallo to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:05:30.197141+00:00 app[web.1]: message took 5
+2016-04-28T03:05:30.197142+00:00 app[web.1]: sending hallo to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:05:30.197169+00:00 app[web.1]: message took 6
+2016-04-28T03:05:40.211983+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body how art thou?
+2016-04-28T03:05:40.212877+00:00 app[web.1]: sending how art thou? to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:05:40.213148+00:00 app[web.1]: message took 3
+2016-04-28T03:05:40.213190+00:00 app[web.1]: sending how art thou? to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:05:40.213835+00:00 app[web.1]: message took 3
+2016-04-28T03:05:40.213868+00:00 app[web.1]: sending how art thou? to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:05:40.213945+00:00 app[web.1]: message took 3
+2016-04-28T03:05:40.214020+00:00 app[web.1]: sending how art thou? to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:05:40.214095+00:00 app[web.1]: message took 4
+2016-04-28T03:05:40.214114+00:00 app[web.1]: sending how art thou? to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:05:40.214349+00:00 app[web.1]: message took 4
+2016-04-28T03:05:49.480792+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /cc with body Good
+2016-04-28T03:05:49.483716+00:00 app[web.1]: sending Good to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:05:49.484053+00:00 app[web.1]: message took 4
+2016-04-28T03:05:49.484102+00:00 app[web.1]: sending Good to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:05:49.484183+00:00 app[web.1]: message took 4
+2016-04-28T03:05:49.484220+00:00 app[web.1]: sending Good to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:05:49.484303+00:00 app[web.1]: message took 4
+2016-04-28T03:05:49.484342+00:00 app[web.1]: sending Good to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:05:49.484419+00:00 app[web.1]: message took 4
+2016-04-28T03:05:49.484455+00:00 app[web.1]: sending Good to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:05:49.484706+00:00 app[web.1]: message took 4
+2016-04-28T03:05:55.308639+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body if you're on a phone, sorry about how crappy this looks
+2016-04-28T03:05:55.311160+00:00 app[web.1]: sending if you're on a phone, sorry about how crappy this looks to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:05:55.311466+00:00 app[web.1]: message took 3
+2016-04-28T03:05:55.311508+00:00 app[web.1]: sending if you're on a phone, sorry about how crappy this looks to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:05:55.311587+00:00 app[web.1]: message took 3
+2016-04-28T03:05:55.311804+00:00 app[web.1]: sending if you're on a phone, sorry about how crappy this looks to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:05:55.311888+00:00 app[web.1]: message took 3
+2016-04-28T03:05:55.311952+00:00 app[web.1]: sending if you're on a phone, sorry about how crappy this looks to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:05:55.312054+00:00 app[web.1]: message took 4
+2016-04-28T03:05:55.312085+00:00 app[web.1]: sending if you're on a phone, sorry about how crappy this looks to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:05:55.313178+00:00 app[web.1]: message took 5
+2016-04-28T03:06:03.280464+00:00 app[web.1]: sending i havent built it for mobile yet to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:06:03.280827+00:00 app[web.1]: sending i havent built it for mobile yet to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:06:03.276794+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body i havent built it for mobile yet
+2016-04-28T03:06:03.280803+00:00 app[web.1]: message took 4
+2016-04-28T03:06:03.281425+00:00 app[web.1]: message took 5
+2016-04-28T03:06:03.281080+00:00 app[web.1]: sending i havent built it for mobile yet to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:06:03.280917+00:00 app[web.1]: message took 4
+2016-04-28T03:06:03.281190+00:00 app[web.1]: sending i havent built it for mobile yet to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:06:03.280950+00:00 app[web.1]: sending i havent built it for mobile yet to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:06:03.281034+00:00 app[web.1]: message took 4
+2016-04-28T03:06:03.281157+00:00 app[web.1]: message took 5
+2016-04-28T03:06:11.232887+00:00 app[web.1]: sending I've seen worse 😂 to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:06:11.198405+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /cc with body I've seen worse 😂
+2016-04-28T03:06:11.233037+00:00 app[web.1]: sending I've seen worse 😂 to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:06:11.232853+00:00 app[web.1]: message took 34
+2016-04-28T03:06:11.233118+00:00 app[web.1]: message took 35
+2016-04-28T03:06:11.232985+00:00 app[web.1]: message took 34
+2016-04-28T03:06:11.233250+00:00 app[web.1]: message took 35
+2016-04-28T03:06:11.233311+00:00 app[web.1]: sending I've seen worse 😂 to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:06:11.232459+00:00 app[web.1]: sending I've seen worse 😂 to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:06:11.233165+00:00 app[web.1]: sending I've seen worse 😂 to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:06:11.233567+00:00 app[web.1]: message took 35
+2016-04-28T03:06:14.551048+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /cc with body I've seen worse 😂
+2016-04-28T03:06:14.553150+00:00 app[web.1]: sending I've seen worse 😂 to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:06:14.558707+00:00 app[web.1]: message took 8
+2016-04-28T03:06:14.559011+00:00 app[web.1]: sending I've seen worse 😂 to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:06:14.559166+00:00 app[web.1]: message took 9
+2016-04-28T03:06:14.559210+00:00 app[web.1]: sending I've seen worse 😂 to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:06:14.559293+00:00 app[web.1]: message took 9
+2016-04-28T03:06:14.560141+00:00 app[web.1]: sending I've seen worse 😂 to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:06:14.562251+00:00 app[web.1]: message took 12
+2016-04-28T03:06:14.562302+00:00 app[web.1]: sending I've seen worse 😂 to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:06:14.563861+00:00 app[web.1]: message took 12
+2016-04-28T03:06:21.947068+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body lel
+2016-04-28T03:06:21.952268+00:00 app[web.1]: sending lel to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:06:21.952633+00:00 app[web.1]: message took 6
+2016-04-28T03:06:21.952661+00:00 app[web.1]: sending lel to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:06:21.952758+00:00 app[web.1]: message took 6
+2016-04-28T03:06:21.952789+00:00 app[web.1]: sending lel to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:06:21.952878+00:00 app[web.1]: message took 6
+2016-04-28T03:06:21.952899+00:00 app[web.1]: sending lel to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:06:21.953232+00:00 app[web.1]: message took 6
+2016-04-28T03:06:21.953237+00:00 app[web.1]: sending lel to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:06:21.953494+00:00 app[web.1]: message took 7
+2016-04-28T03:06:22.082435+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /cc with body I've seen worse 
+2016-04-28T03:06:22.087132+00:00 app[web.1]: sending I've seen worse  to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:06:22.095697+00:00 app[web.1]: message took 13
+2016-04-28T03:06:22.095744+00:00 app[web.1]: sending I've seen worse  to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:06:22.095855+00:00 app[web.1]: message took 13
+2016-04-28T03:06:22.096097+00:00 app[web.1]: sending I've seen worse  to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:06:22.096103+00:00 app[web.1]: message took 13
+2016-04-28T03:06:22.096104+00:00 app[web.1]: sending I've seen worse  to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:06:22.096105+00:00 app[web.1]: message took 14
+2016-04-28T03:06:22.096122+00:00 app[web.1]: sending I've seen worse  to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:06:22.096437+00:00 app[web.1]: message took 14
+2016-04-28T03:06:41.984642+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/basketball [36m304 [0m6.281 ms - -[0m
+2016-04-28T03:06:43.533683+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /cc with body Whoops sorry didn't realize I sent that three times 
+2016-04-28T03:06:43.536277+00:00 app[web.1]: sending Whoops sorry didn't realize I sent that three times  to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:06:43.539852+00:00 app[web.1]: message took 6
+2016-04-28T03:06:43.539976+00:00 app[web.1]: sending Whoops sorry didn't realize I sent that three times  to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:06:43.540072+00:00 app[web.1]: message took 7
+2016-04-28T03:06:43.540117+00:00 app[web.1]: sending Whoops sorry didn't realize I sent that three times  to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:06:43.540236+00:00 app[web.1]: message took 7
+2016-04-28T03:06:43.540287+00:00 app[web.1]: sending Whoops sorry didn't realize I sent that three times  to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:06:43.540394+00:00 app[web.1]: message took 7
+2016-04-28T03:06:43.540733+00:00 app[web.1]: message took 7
+2016-04-28T03:06:43.540446+00:00 app[web.1]: sending Whoops sorry didn't realize I sent that three times  to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:06:44.645395+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/%F0%9F%98%82 [32m200 [0m6.785 ms - 14[0m
+2016-04-28T03:06:44.713525+00:00 app[web.1]: [0mGET /r/%F0%9F%98%82 [32m200 [0m8.680 ms - 71[0m
+2016-04-28T03:06:44.721620+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/%F0%9F%98%82 [36m304 [0m9.217 ms - -[0m
+2016-04-28T03:06:44.789515+00:00 app[web.1]: [0mGET /r/%F0%9F%98%82 [36m304 [0m10.046 ms - -[0m
+2016-04-28T03:06:45.476902+00:00 app[web.1]: [0mGET /r/%F0%9F%98%82 [36m304 [0m7.095 ms - -[0m
+2016-04-28T03:06:45.479384+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/%F0%9F%98%82 [36m304 [0m10.471 ms - -[0m
+2016-04-28T03:06:46.083437+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body XD
+2016-04-28T03:06:46.088434+00:00 app[web.1]: sending XD to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:06:46.089103+00:00 app[web.1]: message took 6
+2016-04-28T03:06:46.089145+00:00 app[web.1]: sending XD to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:06:46.090039+00:00 app[web.1]: message took 6
+2016-04-28T03:06:46.090075+00:00 app[web.1]: sending XD to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:06:46.090181+00:00 app[web.1]: message took 7
+2016-04-28T03:06:46.090254+00:00 app[web.1]: sending XD to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:06:46.090340+00:00 app[web.1]: message took 7
+2016-04-28T03:06:46.090370+00:00 app[web.1]: sending XD to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:06:46.090622+00:00 app[web.1]: message took 7
+2016-04-28T03:06:52.933439+00:00 app[web.1]: [0mGET /r/%F0%9F%98%82 [36m304 [0m8.717 ms - -[0m
+2016-04-28T03:06:52.977137+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/%F0%9F%98%82 [36m304 [0m15.293 ms - -[0m
+2016-04-28T03:06:55.402088+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m13.196 ms - -[0m
+2016-04-28T03:06:55.477766+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m8.207 ms - -[0m
+2016-04-28T03:06:55.952998+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m4.535 ms - -[0m
+2016-04-28T03:07:10.228901+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body try opening another chat
+2016-04-28T03:07:10.244011+00:00 app[web.1]: sending try opening another chat to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:07:10.242931+00:00 app[web.1]: message took 14
+2016-04-28T03:07:10.243110+00:00 app[web.1]: message took 15
+2016-04-28T03:07:10.243798+00:00 app[web.1]: sending try opening another chat to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:07:10.243950+00:00 app[web.1]: message took 15
+2016-04-28T03:07:10.241943+00:00 app[web.1]: sending try opening another chat to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:07:10.242990+00:00 app[web.1]: sending try opening another chat to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:07:10.243260+00:00 app[web.1]: sending try opening another chat to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:07:10.243737+00:00 app[web.1]: message took 15
+2016-04-28T03:07:10.245816+00:00 app[web.1]: message took 17
+2016-04-28T03:07:13.596977+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m13.633 ms - -[0m
+2016-04-28T03:07:25.198198+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc [36m304 [0m10.348 ms - -[0m
+2016-04-28T03:07:25.865498+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m25.616 ms - -[0m
+2016-04-28T03:07:26.990032+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc [36m304 [0m9.892 ms - -[0m
+2016-04-28T03:07:43.399807+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /cc with body ?
+2016-04-28T03:07:43.401683+00:00 app[web.1]: sending ? to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:07:43.401970+00:00 app[web.1]: message took 2
+2016-04-28T03:07:43.402006+00:00 app[web.1]: sending ? to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:07:43.402075+00:00 app[web.1]: message took 3
+2016-04-28T03:07:43.402107+00:00 app[web.1]: sending ? to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:07:43.402190+00:00 app[web.1]: message took 3
+2016-04-28T03:07:43.402240+00:00 app[web.1]: sending ? to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:07:43.402306+00:00 app[web.1]: message took 3
+2016-04-28T03:07:43.402345+00:00 app[web.1]: sending ? to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:07:43.402596+00:00 app[web.1]: message took 3
+2016-04-28T03:08:10.833531+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body after /cc type a space and then /xd
+2016-04-28T03:08:13.737513+00:00 app[web.1]: sending after /cc type a space and then /xd to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:08:13.737893+00:00 app[web.1]: message took 2904
+2016-04-28T03:08:13.737939+00:00 app[web.1]: sending after /cc type a space and then /xd to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:08:13.738016+00:00 app[web.1]: message took 2904
+2016-04-28T03:08:13.738055+00:00 app[web.1]: sending after /cc type a space and then /xd to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:08:13.738151+00:00 app[web.1]: message took 2905
+2016-04-28T03:08:13.738180+00:00 app[web.1]: sending after /cc type a space and then /xd to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:08:13.738476+00:00 app[web.1]: message took 2905
+2016-04-28T03:08:13.738522+00:00 app[web.1]: sending after /cc type a space and then /xd to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:08:13.738776+00:00 app[web.1]: message took 2905
+2016-04-28T03:08:23.969967+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc [36m304 [0m5.657 ms - -[0m
+2016-04-28T03:08:28.005144+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/xd [32m200 [0m8.911 ms - 14[0m
+2016-04-28T03:08:28.095317+00:00 app[web.1]: [0mGET /r/xd [32m200 [0m3.417 ms - 61[0m
+2016-04-28T03:08:28.193487+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/xd [36m304 [0m4.822 ms - -[0m
+2016-04-28T03:08:28.272799+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/xd [36m304 [0m4.058 ms - -[0m
+2016-04-28T03:09:02.869830+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc [36m304 [0m10.267 ms - -[0m
+2016-04-28T03:09:08.849702+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc,/xd [32m200 [0m30.077 ms - 14[0m
+2016-04-28T03:09:08.837192+00:00 app[web.1]: [0mGET /r/xd [32m200 [0m24.981 ms - 61[0m
+2016-04-28T03:09:10.509851+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc,/xd [36m304 [0m16.613 ms - -[0m
+2016-04-28T03:09:11.543595+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/xd [36m304 [0m10.027 ms - -[0m
+2016-04-28T03:09:13.001580+00:00 app[web.1]: [0mGET /subscribe?session=d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062&phrases=/cc,/xd [36m304 [0m9.276 ms - -[0m
+2016-04-28T03:09:14.080542+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc,/xd [36m304 [0m4.474 ms - -[0m
+2016-04-28T03:09:19.294121+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc,/xd [36m304 [0m6.269 ms - -[0m
+2016-04-28T03:09:19.430890+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc,/ [32m200 [0m11.464 ms - 14[0m
+2016-04-28T03:09:22.685397+00:00 app[web.1]: [0mGET /subscribe?session=693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8&phrases=/cc,/xd [36m304 [0m4.757 ms - -[0m
+2016-04-28T03:09:26.868107+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /xd with body Oh look 
+2016-04-28T03:09:26.870584+00:00 app[web.1]: sending Oh look  to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /xd
+2016-04-28T03:09:26.871025+00:00 app[web.1]: message took 2
+2016-04-28T03:09:26.871124+00:00 app[web.1]: sending Oh look  to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /xd
+2016-04-28T03:09:26.871488+00:00 app[web.1]: message took 3
+2016-04-28T03:09:35.995748+00:00 app[web.1]: Received chat from 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 intended for /cc with body It worked
+2016-04-28T03:09:35.999273+00:00 app[web.1]: sending It worked to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:09:35.999578+00:00 app[web.1]: message took 4
+2016-04-28T03:09:35.999609+00:00 app[web.1]: sending It worked to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:09:35.999687+00:00 app[web.1]: message took 4
+2016-04-28T03:09:35.999719+00:00 app[web.1]: sending It worked to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:09:35.999789+00:00 app[web.1]: message took 4
+2016-04-28T03:09:35.999832+00:00 app[web.1]: sending It worked to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:09:35.999894+00:00 app[web.1]: message took 4
+2016-04-28T03:09:35.999956+00:00 app[web.1]: sending It worked to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:09:36.000194+00:00 app[web.1]: message took 5
+2016-04-28T03:09:36.361392+00:00 app[web.1]: [0mGET /r/ [32m- [0m- ms - -[0m
+2016-04-28T03:09:41.502954+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /xd with body yep
+2016-04-28T03:09:41.505606+00:00 app[web.1]: sending yep to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /xd
+2016-04-28T03:09:41.506357+00:00 app[web.1]: message took 4
+2016-04-28T03:09:41.506388+00:00 app[web.1]: sending yep to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /xd
+2016-04-28T03:09:41.506577+00:00 app[web.1]: message took 4
+2016-04-28T03:09:51.972088+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body you can do as many of those as you want
+2016-04-28T03:09:51.976231+00:00 app[web.1]: sending you can do as many of those as you want to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:09:51.976548+00:00 app[web.1]: message took 5
+2016-04-28T03:09:51.976586+00:00 app[web.1]: sending you can do as many of those as you want to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:09:51.976666+00:00 app[web.1]: message took 5
+2016-04-28T03:09:51.976709+00:00 app[web.1]: sending you can do as many of those as you want to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:09:51.976791+00:00 app[web.1]: message took 5
+2016-04-28T03:09:51.976823+00:00 app[web.1]: sending you can do as many of those as you want to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:09:51.976905+00:00 app[web.1]: message took 5
+2016-04-28T03:09:51.976938+00:00 app[web.1]: sending you can do as many of those as you want to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:09:51.977178+00:00 app[web.1]: message took 6
+2016-04-28T03:13:20.205678+00:00 app[web.1]: connected, sending auth request
+2016-04-28T03:13:20.436911+00:00 app[web.1]: got auth response
+2016-04-28T03:13:20.436927+00:00 app[web.1]: f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84
+2016-04-28T03:13:20.677930+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [36m304 [0m9.140 ms - -[0m
+2016-04-28T03:13:39.436466+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body You'll figure it out 😂😂
+2016-04-28T03:13:39.440207+00:00 app[web.1]: sending You'll figure it out 😂😂 to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:13:39.440683+00:00 app[web.1]: message took 4
+2016-04-28T03:13:39.440721+00:00 app[web.1]: sending You'll figure it out 😂😂 to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:13:39.440816+00:00 app[web.1]: message took 4
+2016-04-28T03:13:39.440868+00:00 app[web.1]: sending You'll figure it out 😂😂 to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:13:39.441120+00:00 app[web.1]: message took 5
+2016-04-28T03:13:39.441163+00:00 app[web.1]: sending You'll figure it out 😂😂 to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:13:39.441244+00:00 app[web.1]: message took 5
+2016-04-28T03:13:39.441282+00:00 app[web.1]: sending You'll figure it out 😂😂 to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:13:39.441366+00:00 app[web.1]: message took 5
+2016-04-28T03:13:42.732132+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body You'll figure it out 😂😂
+2016-04-28T03:13:42.739796+00:00 app[web.1]: sending You'll figure it out 😂😂 to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:13:42.739805+00:00 app[web.1]: message took 6
+2016-04-28T03:13:42.739807+00:00 app[web.1]: sending You'll figure it out 😂😂 to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:13:42.739808+00:00 app[web.1]: message took 6
+2016-04-28T03:13:42.739809+00:00 app[web.1]: sending You'll figure it out 😂😂 to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:13:42.739810+00:00 app[web.1]: message took 7
+2016-04-28T03:13:42.739811+00:00 app[web.1]: sending You'll figure it out 😂😂 to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:13:42.739812+00:00 app[web.1]: message took 7
+2016-04-28T03:13:42.739813+00:00 app[web.1]: sending You'll figure it out 😂😂 to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:13:42.739814+00:00 app[web.1]: message took 7
+2016-04-28T03:13:45.066277+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body You'll figure it out 😂😂
+2016-04-28T03:13:45.070303+00:00 app[web.1]: sending You'll figure it out 😂😂 to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:13:45.070632+00:00 app[web.1]: message took 4
+2016-04-28T03:13:45.070662+00:00 app[web.1]: sending You'll figure it out 😂😂 to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:13:45.070731+00:00 app[web.1]: message took 4
+2016-04-28T03:13:45.070757+00:00 app[web.1]: sending You'll figure it out 😂😂 to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:13:45.070954+00:00 app[web.1]: message took 4
+2016-04-28T03:13:45.071153+00:00 app[web.1]: sending You'll figure it out 😂😂 to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:13:45.071217+00:00 app[web.1]: message took 5
+2016-04-28T03:13:45.071238+00:00 app[web.1]: sending You'll figure it out 😂😂 to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:13:45.071288+00:00 app[web.1]: message took 5
+2016-04-28T03:13:46.569393+00:00 app[web.1]: [0mGET / [32m200 [0m18.809 ms - 802[0m
+2016-04-28T03:13:46.741300+00:00 app[web.1]: [0mGET /css/main-normalize.css [36m304 [0m0.959 ms - -[0m
+2016-04-28T03:13:46.761506+00:00 app[web.1]: [0mGET /css/main-tile-style.css [36m304 [0m1.559 ms - -[0m
+2016-04-28T03:13:46.893807+00:00 app[web.1]: [0mGET /javascripts/main.js [36m304 [0m1.011 ms - -[0m
+2016-04-28T03:13:46.872325+00:00 app[web.1]: [0mGET /css/main-style.css [36m304 [0m1.612 ms - -[0m
+2016-04-28T03:13:47.363043+00:00 app[web.1]: [0mGET /getsubs?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 [32m200 [0m5.703 ms - 38[0m
+2016-04-28T03:13:47.385998+00:00 app[web.1]: connected, sending auth request
+2016-04-28T03:13:47.714671+00:00 app[web.1]: got auth response
+2016-04-28T03:13:47.714705+00:00 app[web.1]: f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84
+2016-04-28T03:13:47.866994+00:00 app[web.1]: [0mGET /r/cc [32m200 [0m14.314 ms - 3508[0m
+2016-04-28T03:13:47.886265+00:00 app[web.1]: [0mGET /subscribe?session=f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84&phrases=/cc [36m304 [0m8.439 ms - -[0m
+2016-04-28T03:14:24.303650+00:00 app[web.1]: Received chat from f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 intended for /cc with body Wow that was late
+2016-04-28T03:14:24.306581+00:00 app[web.1]: sending Wow that was late to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:14:24.307050+00:00 app[web.1]: message took 4
+2016-04-28T03:14:24.307113+00:00 app[web.1]: sending Wow that was late to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:14:24.307233+00:00 app[web.1]: message took 4
+2016-04-28T03:14:24.307283+00:00 app[web.1]: sending Wow that was late to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:14:24.307626+00:00 app[web.1]: message took 4
+2016-04-28T03:14:24.307687+00:00 app[web.1]: sending Wow that was late to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:14:24.307816+00:00 app[web.1]: message took 4
+2016-04-28T03:14:24.307886+00:00 app[web.1]: sending Wow that was late to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:14:24.308020+00:00 app[web.1]: message took 4
+2016-04-28T03:14:46.961352+00:00 app[web.1]: Received chat from d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 intended for /cc with body woah it sent three times
+2016-04-28T03:14:46.964017+00:00 app[web.1]: sending woah it sent three times to d87c4aa3b1c9d5ff77ef380d72d0f6f0e3a1b8d8df1c3b5b834f346775a7d062 from /cc
+2016-04-28T03:14:46.964527+00:00 app[web.1]: message took 3
+2016-04-28T03:14:46.964588+00:00 app[web.1]: sending woah it sent three times to f7d349ce1be38abfb18fc955f6ed92bd89743a1fd75ffa2b606a4822d0517a5b from /cc
+2016-04-28T03:14:46.964700+00:00 app[web.1]: message took 3
+2016-04-28T03:14:46.964752+00:00 app[web.1]: sending woah it sent three times to f56fb7bc5df22d6164f3b6f9fb4bba3c0ccb1dfbdfde425bef1dbef973c65b84 from /cc
+2016-04-28T03:14:46.965238+00:00 app[web.1]: message took 4
+2016-04-28T03:14:46.965298+00:00 app[web.1]: sending woah it sent three times to 08421bf1fe52ee2aa435c159998a3e7d2669a04df5d50d1c0da8afa251dee662 from /cc
+2016-04-28T03:14:46.965427+00:00 app[web.1]: message took 4
+2016-04-28T03:14:46.965786+00:00 app[web.1]: sending woah it sent three times to 693b8062e54670294e7a9860cb8321e4b2865dd24174f522076958272ef141e8 from /cc
+2016-04-28T03:14:46.965901+00:00 app[web.1]: message took 4
