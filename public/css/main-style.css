@@ -48,8 +48,8 @@ body{
 }
 
 .chat-container{
-  width:510px;
-  height:180px;
+  width:310px;
+  height:410px;
   background-color:white;
 /*	font-family:"source code pro";*/
 	text-align:center;
@@ -61,12 +61,12 @@ body{
 
 .type-message{
   outline:none;
-  width:350px;
+/*  width:350px;*/
 }
 
 .sendholder{
   max-width:100%;
-  width:510px;
+  width:310px;
 /*  font-family:"source code pro";*/
   font-size:15px;
 }
@@ -78,7 +78,7 @@ button{
   color:white;
   margin-top:1px;
   height:30px;
-  width:140px;
+/*  width:140px;*/
   float:right;
   background-color:#AA4F39;
 }
@@ -93,7 +93,7 @@ button:hover{
   margin:5px;
   display:inline-flex;
 	font-size:15px;
-	width:480px;
+	width:300px;
 }
 
 .name{

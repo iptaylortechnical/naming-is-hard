@@ -112,6 +112,7 @@ function updateBlocks(){
 					var rIntent = msg.intent;
 					var body = msg.body;
 					var nom = msg.name;
+					var tim = msg.time;
 			
 					var intentParts = rIntent.split('');
 					intentParts.shift();
@@ -122,14 +123,16 @@ function updateBlocks(){
 					
 					var Top = chatWindow.scrollTop();
 					var Height = document.getElementById('chat'+intent).scrollHeight;
+					console.log(Top);
+					console.log(Height);
 		
 					if(nom != username){
-						chatWindow.append('<div class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
+						chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
 					}else{
-						chatWindow.append('<div class="message mine"><div class="message-text mine">' + body + '</div><div class="name mine">' + nom + '</div></div>');
+						chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message mine"><div class="message-text mine">' + body + '</div><div class="name mine">' + nom + '</div></div>');
 					}
 
-					if(Height - Top < 270)
+					if(Height - Top < 540)
 chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 					
 					var box = chatWindow.parent().parent().parent();
@@ -194,9 +197,9 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 								for(var j = 0; j < recordLength; j++){
 									console.log('u:' + username);
 									if(response.records[j].name != username){
-										records += '<div class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
+										records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
 									}else{
-										records += '<div class="message mine"><div class="message-text mine">' + response.records[j].body + '</div><div class="name mine">' + response.records[j].name + '</div></div>';
+										records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message mine"><div class="message-text mine">' + response.records[j].body + '</div><div class="name mine">' + response.records[j].name + '</div></div>';
 									}
 									
 								}
@@ -206,7 +209,7 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 						
 							console.log(response);
 						
-							$('#dash' + bank[currentNomen]).html('<a id="a' + currentNomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected extra"><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+currentNomen+'</div><div id="chat' + currentNomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + currentNomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
+							$('#dash' + bank[currentNomen]).html('<a id="a' + currentNomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+currentNomen+'</div><div id="chat' + currentNomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + currentNomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
 			    	
 							$('#send'+currentNomen).click(function(){
 								var id = this.id;
@@ -216,26 +219,32 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 								var intent =  '/' + rIntent;
 								var body = $('#type'+rIntent).val();
 			
+								var date = new Date();
+								
 								socket.emit('chat', {
 									intent:intent,
-									body:body
+									body:body,
+									time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
 								})
 			
 							})
 		
 							$('#type'+currentNomen).keypress(function(e){
 								if(e.keyCode == 13){
+									
 									var id = this.id;
-			
 									var rIntent = id.split('type')[1];
-			
 									var intent = '/' + rIntent;
-				
 									var body = $(this).val();
+									var date = new Date();
+									
 									socket.emit('chat', {
 										intent:intent,
-										body:body
+										body:body,
+										time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
 									})
+									
+									console.log((date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds());
 				
 									$(this).val('');
 				
@@ -263,6 +272,6 @@ function Block(nomen){
 	return {
 		id:'#send'+nomen,
 		nomen:nomen,
-		src: '<a id="0" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected extra"><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>'
+		src: '<a id="0" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>'
 	};
 }

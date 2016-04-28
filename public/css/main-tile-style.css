@@ -1228,19 +1228,19 @@ body {
   width: 130px;
 }
 .tile-lg {
-  width: 550px;
-  height: 270px;
+  height: 550px;
+  width: 350px;
 }
 .tile-lg .content-wrapper .tile-content {
-  height: 283px;
+  height: 550px;
   padding: 20px;
 }
 .tile-lg .content-wrapper .tile-content .tile-img {
   height: 180px;
 }
 .tile-lg .content-wrapper .tile-content .tile-img-bg {
-  width: 550px;
-  height: 270px;
+  height: 550px;
+  width: 350px;
   margin-left: -20px;
   margin-top: -20px;
 }
