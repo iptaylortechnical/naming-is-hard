@@ -91,28 +91,22 @@ button:hover{
   min-height:20px;
   border:1px solid lightgrey;
   margin:5px;
-  display:inline-flex;
 	font-size:15px;
 	width:300px;
 }
 
 .name{
-  max-width:20%;
-  display:block;
-  top:50%;
-  text-align:left;
-  position:relative;
-  vertical-align:center;
-  padding:10px;
+  max-width:90%;
+  padding-right:10px;
 	word-wrap:break-word;
+	font-size:10px;
 }
 
 .message-text{
   min-width:80%;
   max-width:89%;
   display:block;
-	text-align:left;
-	padding:10px;
+	padding:0px 10px 10px 10px;
 	overflow-wrap:break-word;
 }
 

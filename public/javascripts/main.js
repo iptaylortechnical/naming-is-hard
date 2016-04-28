@@ -129,7 +129,7 @@ function updateBlocks(){
 					if(nom != username){
 						chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
 					}else{
-						chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message mine"><div class="message-text mine">' + body + '</div><div class="name mine">' + nom + '</div></div>');
+						chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message mine"><div class="name">' + nom + '</div><div class="message-text mine">' + body + '</div></div>');
 					}
 
 					if(Height - Top < 540)
@@ -199,7 +199,7 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 									if(response.records[j].name != username){
 										records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
 									}else{
-										records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message mine"><div class="message-text mine">' + response.records[j].body + '</div><div class="name mine">' + response.records[j].name + '</div></div>';
+										records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message mine"><div class="name">' + response.records[j].name + '</div><div class="message-text mine">' + response.records[j].body + '</div></div>';
 									}
 									
 								}
@@ -227,6 +227,7 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 									time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
 								})
 			
+								$($(this).parent().children()[0]).val('');
 							})
 		
 							$('#type'+currentNomen).keypress(function(e){
