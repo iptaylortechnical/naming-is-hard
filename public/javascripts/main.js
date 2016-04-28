@@ -121,6 +121,7 @@ function updateBlocks(){
 					var chatWindow = $('#chat' + intent);
 					
 					var Top = chatWindow.scrollTop();
+					var Height = document.getElementById('chat'+intent).scrollHeight;
 		
 					if(nom != username){
 						chatWindow.append('<div class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
@@ -128,7 +129,7 @@ function updateBlocks(){
 						chatWindow.append('<div class="message mine"><div class="message-text mine">' + body + '</div><div class="name mine">' + nom + '</div></div>');
 					}
 
-					if((-1)*(Top - document.getElementById('chat'+intent).scrollHeight) < 270)
+					if(Height - Top < 270)
 chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 					
 					var box = chatWindow.parent().parent().parent();
