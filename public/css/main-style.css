@@ -28,7 +28,7 @@ body{
   outline:none;
   width:75%;
   border-radius:5px;
-  font-family: 'Source Code Pro';
+/*  font-family: 'Source Code Pro';*/
   border:none;
 }
 
@@ -51,7 +51,7 @@ body{
   width:510px;
   height:180px;
   background-color:white;
-	font-family:"source code pro";
+/*	font-family:"source code pro";*/
 	text-align:center;
 	font-size:30px;
 	display:block;
@@ -67,7 +67,7 @@ body{
 .sendholder{
   max-width:100%;
   width:510px;
-  font-family:"source code pro";
+/*  font-family:"source code pro";*/
   font-size:15px;
 }
 
@@ -100,11 +100,11 @@ button:hover{
   max-width:20%;
   display:block;
   top:50%;
-  text-align:center;
-  position:relavtive;
+  text-align:left;
+  position:relative;
   vertical-align:center;
   padding:10px;
-	overflow-x:hidden;
+	word-wrap:break-word;
 }
 
 .message-text{
@@ -123,4 +123,18 @@ button:hover{
 .dash{
 	width: auto;
 	display:inline-block;
+}
+
+.new{
+	background-color:#27566B;
+	color:white;
+}
+
+.new:hover{
+	background-color:#27566B;
+}
+
+.mine{
+	text-align:right;
+	background-color:#ECECEC;
 }

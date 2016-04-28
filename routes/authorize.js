@@ -17,23 +17,30 @@ function sendPackage(res){
 	res.send(data);
 }
 
+// router.get('/', function(req, res, next){
+// 	res.send(req.cookies);
+// })
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
 	var query = req.query;
 	var db = req.db;
-	
+
 	if(query){
 		username = query.username;
 		console.log(username);
 		password = query.password;
-		
+
 		info.userExists(username, db, function(e, exists){
 			console.log('user exists: ' + exists);
 			if(exists){
 				info.getSessionFromUser(username, password, db, function(e, sesh){
 					if(!e){
 						session = sesh;
+
+						res.cookie("session", session);
+						
 						sendPackage(res);
 					}else{
 						err = e;
@@ -47,12 +54,12 @@ router.get('/', function(req, res, next) {
 				})
 			}
 		})
-		
+
 	}else{
 		err = "did not specify username and password";
 		sendPackage(res);
 	}
-	
+
 });
 
 module.exports = router;

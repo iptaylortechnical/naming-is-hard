@@ -10,6 +10,8 @@ var modelBlocks = [];
 var shownBlocks = [];
 var idBlocks = {};
 
+var username = '';
+
 var bank = {};
 
 var hasCallbackBeenSet = {};
@@ -25,9 +27,13 @@ socket.on('auth', function(){
 	socket.emit('authresponse', $.cookie('session'));
 })
 
-socket.on('authenticated', function(){
+socket.on('authenticated', function(msg){
 	console.log('authenticated, now can start running code blocks');
 	isAuthenticated = true;
+	console.log(msg.username);
+	username = msg.username;
+	updateBlocks();
+	
 })
 
 socket.on('disconnected', function(){
@@ -47,7 +53,6 @@ $(document).ready(function(){
 			
 			$('.in').val(subs);
 	
-			updateBlocks();
 		}
 	}
 	
@@ -69,7 +74,6 @@ $(document).ready(function(){
 	$('.in').blur(updateBlocks);
 	$('.in').focus(updateBlocks);
 	
-	updateBlocks();
 	
 });
 
@@ -113,13 +117,23 @@ function updateBlocks(){
 					intentParts.shift();
 			
 					var intent = intentParts.join('');
-			
-					//if(body != lastBody){
-						$('#chat' + intent).append('<div class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
-						//lastBody = body;
-						//}
-						
-						$('#chat'+intent).scrollTop(document.getElementById('chat'+intent).scrollHeight);
+					
+					var chatWindow = $('#chat' + intent);
+		
+					if(nom != username){
+						chatWindow.append('<div class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
+					}else{
+						chatWindow.append('<div class="message mine"><div class="message-text mine">' + body + '</div><div class="name mine">' + nom + '</div></div>');
+					}
+
+					if((-1)*(chatWindow.scrollTop() - document.getElementById('chat'+intent).scrollHeight) < 270)
+chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
+					
+					var box = chatWindow.parent().parent().parent();
+					if(!$($(box.children().children().children()[2]).children().children()[0]).is(':focus')){
+						box.addClass('new');
+						$(box.children().children().children()[0]).attr('style', 'color:white;');
+					}
 				})
 				hasCallbackBeenSet[parts[i]] = true;
 			}
@@ -175,7 +189,13 @@ function updateBlocks(){
 						  	var recordLength = response.records.length;
 							
 								for(var j = 0; j < recordLength; j++){
-									records += '<div class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
+									console.log('u:' + username);
+									if(response.records[j].name != username){
+										records += '<div class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
+									}else{
+										records += '<div class="message mine"><div class="message-text mine">' + response.records[j].body + '</div><div class="name mine">' + response.records[j].name + '</div></div>';
+									}
+									
 								}
 							}
 						
@@ -225,45 +245,14 @@ function updateBlocks(){
 					xhttp.send();
 				})();
 			}
+			
+			$('.type-message').focus(function(){
+				var box = $(this).parent().parent().parent().parent().parent();
+				box.removeClass('new');
+				$(box.children().children().children()[0]).attr('style', 'color:#111111;');
+			})
 		}
 		
-		// modelBlocks = [];
-// 		for(var i = 0; i < parts.length; i++){
-// 			if(parts[i][0] == '@' || parts[i][0] == '/'){
-//
-// 				var n = parts[i].split('');
-// 				n.shift();
-// 				nN = n.join('');
-//
-// 				var block = Block(nN);
-// 				modelBlocks[i] = block;
-//
-// 				if(consistent){
-// 					consistent = !!shownBlocks[i] ? modelBlocks[i].nomen == shownBlocks[i].nomen : false;
-// 				}
-// 			}
-// 		}
-//
-// 		consistent = consistent ? (!!modelBlocks[0] == !!shownBlocks[0]) : false;
-//
-// 		if(!consistent){
-//
-// 			shownBlocks = [];
-//
-// 			var total = '';
-// 			for(var i = 0; i < parts.length; i++){
-// 				if(modelBlocks[i]){
-// 					var block = modelBlocks[i];
-// 					total = total + block.src;
-// 					shownBlocks[i] = block;
-// 					idBlocks[block.id] = block;
-// 				}
-// 			}
-//
-// 			$('#answers').html(total);
-//
-// 			amountOfBlocks = parts.length;
-// 			consistent = true;
 	}
 }
 

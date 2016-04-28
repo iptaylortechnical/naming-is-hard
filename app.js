@@ -65,7 +65,11 @@ app.lel = function(io){
 				delete chatters[session];
 			})
 			
-			socket.emit('authenticated');
+			info.getUserFromSession(session, db, function(e, doc){
+				socket.emit('authenticated', {
+					username: doc
+				});
+			})
 			
 		})
 		
