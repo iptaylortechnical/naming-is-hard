@@ -4,11 +4,13 @@ var amountOfBlocks = 0;
 
 var isAuthenticated = true;
 
-var PRODUCTION = true;
+var PRODUCTION = false;
 
 var modelBlocks = [];
 var shownBlocks = [];
 var idBlocks = {};
+
+var imgMode = false;
 
 var username = '';
 
@@ -108,11 +110,12 @@ function updateBlocks(){
 		for(var i = 0; i < parts.length; i++){
 			if(!hasCallbackBeenSet[parts[i]]){
 				socket.on(parts[i], function(msg){
-					console.log(msg);
+					
 					var rIntent = msg.intent;
 					var body = msg.body;
 					var nom = msg.name;
 					var tim = msg.time;
+					var typ = msg.type;
 			
 					var intentParts = rIntent.split('');
 					intentParts.shift();
@@ -123,13 +126,21 @@ function updateBlocks(){
 					
 					var Top = chatWindow.scrollTop();
 					var Height = document.getElementById('chat'+intent).scrollHeight;
-					console.log(Top);
-					console.log(Height);
-		
-					if(nom != username){
-						chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
+					
+					console.log(msg);
+					
+					if(typ != 'image'){
+						if(nom != username){
+							chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
+						}else{
+							chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message mine"><div class="name">' + nom + '</div><div class="message-text mine">' + body + '</div></div>');
+						}
 					}else{
-						chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message mine"><div class="name">' + nom + '</div><div class="message-text mine">' + body + '</div></div>');
+						if(nom != username){
+							chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + nom + '</div><img src="' + body + '" class="message-image"/></div>');
+						}else{
+							chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message mine"><div class="name">' + nom + '</div><img src="' + body + '" class="message-image mine"/></div></div>');
+						}
 					}
 
 					if(Height - Top < 540)
@@ -195,11 +206,19 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 						  	var recordLength = response.records.length;
 							
 								for(var j = 0; j < recordLength; j++){
-									console.log('u:' + username);
-									if(response.records[j].name != username){
-										records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
+									
+									if(response.records[j].type != 'image'){
+										if(response.records[j].name != username){
+											records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + response.records[j].name + '</div><div class="message-text">' + response.records[j].body + '</div></div>';
+										}else{
+											records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message mine"><div class="name">' + response.records[j].name + '</div><div class="message-text mine">' + response.records[j].body + '</div></div>';
+										}
 									}else{
-										records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message mine"><div class="name">' + response.records[j].name + '</div><div class="message-text mine">' + response.records[j].body + '</div></div>';
+										if(response.records[j].name != username){
+											records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + response.records[j].name + '</div><img src="' + response.records[j].body + '" class="message-image"/></div>';
+										}else{
+											records += '<div title="' + (response.records[j].time || 'message sent before timestamp feature added') + '" class="message mine"><div class="name">' + response.records[j].name + '</div><img src="' + response.records[j].body + '" class="message-image mine"/></div>';
+										}
 									}
 									
 								}
@@ -209,8 +228,20 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 						
 							console.log(response);
 						
-							$('#dash' + bank[currentNomen]).html('<a id="a' + currentNomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+currentNomen+'</div><div id="chat' + currentNomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + currentNomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
-			    	
+							$('#dash' + bank[currentNomen]).html('<a id="a' + currentNomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+currentNomen+'</div><div id="chat' + currentNomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + currentNomen + '" class="type-message"><button id="send' + nomen + '">send</button><div id="imgmode">Im mode off</div></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
+							
+							$('#imgmode').click(function(){
+								console.log('here')
+								imgMode = !imgMode;
+								$(this).html('img mode ' + imgMode);
+							})
+							
+							$('.type-message').focus(function(){
+								var box = $(this).parent().parent().parent().parent().parent();
+								box.removeClass('new');
+								$(box.children().children().children()[0]).attr('style', 'color:#111111;');
+							})
+							
 							$('#send'+currentNomen).click(function(){
 								var id = this.id;
 			
@@ -220,11 +251,13 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 								var body = $('#type'+rIntent).val();
 			
 								var date = new Date();
+	
 								
 								socket.emit('chat', {
 									intent:intent,
 									body:body,
-									time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
+									time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds(),
+									type: imgMode ? 'image' : null
 								})
 			
 								$($(this).parent().children()[0]).val('');
@@ -242,11 +275,16 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 									socket.emit('chat', {
 										intent:intent,
 										body:body,
-										time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
+										time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds(),
+										type: imgMode ? 'image' : null
 									})
 									
-									console.log((date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds());
-				
+									console.log({
+										intent:intent,
+										body:body,
+										time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds(),
+										type: imgMode ? 'image' : null
+									})
 									$(this).val('');
 				
 								}
@@ -259,11 +297,6 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 				})();
 			}
 			
-			$('.type-message').focus(function(){
-				var box = $(this).parent().parent().parent().parent().parent();
-				box.removeClass('new');
-				$(box.children().children().children()[0]).attr('style', 'color:#111111;');
-			})
 		}
 		
 	}
@@ -273,6 +306,6 @@ function Block(nomen){
 	return {
 		id:'#send'+nomen,
 		nomen:nomen,
-		src: '<a id="0" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>'
+		src: '<a id="0" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button><div id="imgmode">Im mode off</div></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>'
 	};
 }

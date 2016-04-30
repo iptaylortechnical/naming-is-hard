@@ -133,3 +133,7 @@ button:hover{
 	text-align:right;
 	background-color:#ECECEC;
 }
+
+.message-image{
+	width:98%;
+}

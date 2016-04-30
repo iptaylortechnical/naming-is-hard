@@ -44,20 +44,22 @@ app.lel = function(io){
 					var intent = msg.intent;
 					var body = msg.body;
 				
+					console.log(msg);
 					console.log("Received chat from " + this.session + " intended for " + msg.intent + " with body " + msg.body);
 				
 					info.getUserFromSession(senderSession, db, function(e, doc){
 						var theKeys = Object.keys(subscriptions[msg.intent]);
 						for(var k = 0; k < theKeys.length; k++){
 							console.log('sending ' + msg.body + ' to ' + theKeys[k] + ' from ' + msg.intent);
-							subscriptions[msg.intent][theKeys[k]].emit(msg.intent, {name: doc, body:msg.body, intent:msg.intent, time:msg.time});
+							subscriptions[msg.intent][theKeys[k]].emit(msg.intent, {name: doc, body:msg.body, intent:msg.intent, time:msg.time, type:msg.type});
 							TEMPORARY_TIME_STAMP_END = new Date().getTime();
 							console.log('message took ' + (TEMPORARY_TIME_STAMP_END - TEMPORARY_TIME_STAMP_START));
 						}
 						info.storeChat(db, msg.intent, {
 							name: doc,
 							body: msg.body,
-							time: msg.time
+							time: msg.time,
+							type: msg.type
 						});
 					})
 				}
