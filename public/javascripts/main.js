@@ -10,7 +10,7 @@ var modelBlocks = [];
 var shownBlocks = [];
 var idBlocks = {};
 
-var imgMode = false;
+var imgMode = {};
 
 var username = '';
 
@@ -105,8 +105,6 @@ function updateBlocks(){
 			}
 		}
 		
-		console.log('parts: ' + parts);
-		
 		for(var i = 0; i < parts.length; i++){
 			if(!hasCallbackBeenSet[parts[i]]){
 				socket.on(parts[i], function(msg){
@@ -127,8 +125,6 @@ function updateBlocks(){
 					var Top = chatWindow.scrollTop();
 					var Height = document.getElementById('chat'+intent).scrollHeight;
 					
-					console.log(msg);
-					
 					if(typ != 'image'){
 						if(nom != username){
 							chatWindow.append('<div title="' + (tim || 'message sent before timestamp feature added') + '" class="message"><div class="name">' + nom + '</div><div class="message-text">' + body + '</div></div>');
@@ -144,7 +140,7 @@ function updateBlocks(){
 					}
 
 					if(Height - Top < 540)
-chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
+						chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 					
 					var box = chatWindow.parent().parent().parent();
 					if(!$($(box.children().children().children()[2]).children().children()[0]).is(':focus')){
@@ -228,18 +224,20 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 						
 							console.log(response);
 						
-							$('#dash' + bank[currentNomen]).html('<a id="a' + currentNomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+currentNomen+'</div><div id="chat' + currentNomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + currentNomen + '" class="type-message"><button id="send' + nomen + '">send</button><div id="imgmode">Im mode off</div></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
-							
-							$('#imgmode').click(function(){
-								console.log('here')
-								imgMode = !imgMode;
-								$(this).html('img mode ' + imgMode);
-							})
+							$('#dash' + bank[currentNomen]).html('<a id="a' + currentNomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+currentNomen+'</div><div id="chat' + currentNomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + currentNomen + '" class="type-message"><button id="send' + nomen + '">send</button><div class="imgmode">Image mode off</div></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
 							
 							$('.type-message').focus(function(){
 								var box = $(this).parent().parent().parent().parent().parent();
 								box.removeClass('new');
 								$(box.children().children().children()[0]).attr('style', 'color:#111111;');
+							})
+							
+							$('.imgmode').click(function(){
+								var id = $($(this).parent().parent().parent().parent().parent()).attr('id');
+								var int = id.substring(1, id.length);
+								console.log(int)
+								imgMode[int] = !imgMode[int];
+								$(this).html('img mode ' + imgMode[int]);
 							})
 							
 							$('#send'+currentNomen).click(function(){
@@ -257,12 +255,12 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 									intent:intent,
 									body:body,
 									time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds(),
-									type: imgMode ? 'image' : null
+									type: imgMode[currentNomen] ? 'image' : null
 								})
 			
 								$($(this).parent().children()[0]).val('');
 							})
-		
+							
 							$('#type'+currentNomen).keypress(function(e){
 								if(e.keyCode == 13){
 									
@@ -276,22 +274,17 @@ chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 										intent:intent,
 										body:body,
 										time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds(),
-										type: imgMode ? 'image' : null
+										type: imgMode[currentNomen] ? 'image' : null
 									})
 									
-									console.log({
-										intent:intent,
-										body:body,
-										time: (date.getMonth()+1) + '/' + (date.getDate()) + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds(),
-										type: imgMode ? 'image' : null
-									})
 									$(this).val('');
-				
 								}
 							})
 						}
+						
+						
 					};
-		
+					
 					xhttp.open("GET", "/r" + parts[i], true);
 					xhttp.send();
 				})();
@@ -306,6 +299,6 @@ function Block(nomen){
 	return {
 		id:'#send'+nomen,
 		nomen:nomen,
-		src: '<a id="0" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button><div id="imgmode">Im mode off</div></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>'
+		src: '<a id="0" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button><div class="imgmode">Image mode off</div></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>'
 	};
 }
