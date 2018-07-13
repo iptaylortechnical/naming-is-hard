@@ -3,14 +3,14 @@ I started this project to showcase my ability to quickly build useful and effici
 
  **TapNoble** is a lightweight socket-based chat network built entirely from scratch. Most of the work was done over about the course of two and a half weeks, but some improvements and additions have been made since.
 
-Some notable features:
+### Some notable features:
 * 5 second sign up
 * Quick and easy scalability
 * Able to handle millions of current connections on a single heroku dyno
 * Able to serve the average request within 2 milliseconds, from request received to response sent
 * A robust public API
 
-Some technologies used:
+### Some technologies used:
 * Node.js
 * PostgreSQL
 * MongoDB (NoSQL)
