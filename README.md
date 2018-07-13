@@ -1,4 +1,19 @@
-# naming-is-hard
-Naming things is hard. But this is a chat client.
+# TapNoble
+I started this project to showcase my ability to quickly build useful and efficient apps that can be effortlessly scaled, using a variety of technologies.
 
-A really really speedy node-based massive-multiplayer chat client built to handle lots and lots of content with minimal server lag through an anonymous construction.
+ **TapNoble** is a lightweight socket-based chat network built entirely from scratch. Most of the work was done over about the course of two and a half weeks, but some improvements and additions have been made since.
+
+Some notable features:
+* 5 second sign up
+* Quick and easy scalability
+* Able to handle millions of current connections on a single heroku dyno
+* Able to serve the average request within 2 milliseconds, from request received to response sent
+* A robust public API
+
+Some technologies used:
+* Node.js
+* PostgreSQL
+* MongoDB (NoSQL)
+* Web Sockets
+* Angular.js
+* Google Material Design for Angular
