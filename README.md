@@ -1,5 +1,5 @@
 # TapNoble
-I started this project to showcase my ability to quickly build useful and efficient apps that can be effortlessly scaled, using a variety of technologies.
+I started this project to showcase my ability to quickly build useful and efficient apps that can be effortlessly scaled, using a variety of technologies. [Try it out yourself!](http://tapnoble.com)
 
  **TapNoble** is a lightweight socket-based chat network built entirely from scratch. Most of the work was done over about the course of two and a half weeks, but some improvements and additions have been made since.
 
