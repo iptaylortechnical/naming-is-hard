@@ -22,9 +22,9 @@ function sendPackage(res){
 // })
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.post('/', function(req, res, next) {
 
-	var query = req.query;
+	var query = req.body;
 	var db = req.db;
 
 	if(query){

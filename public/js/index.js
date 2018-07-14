@@ -30,10 +30,8 @@ $(".login").submit(function(){
 	var username = document.getElementById('u').value;
 	var password = document.getElementById('p').value;
 	
-	console.log("/auth?username=" + username + "&password=" + password);
-	
-	xhttp.open("GET", "/auth?username=" + username + "&password=" + password, true);
-	xhttp.send();
+	xhttp.open("POST", "/auth", true);
+	xhttp.send({username, password});
 	
 	
   
