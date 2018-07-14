@@ -60,8 +60,8 @@ body{
 	overflow-y:scroll;
   cursor:default;
   border-radius: 0;
-  border-top-right-radius:19px;
-  border-top-left-radius: 19px;
+  border-top-right-radius:5px;
+  border-top-left-radius: 5px;
 }
 
 .type-message{
@@ -69,7 +69,7 @@ body{
   border: 1px solid #FD7057;
   width: 230px;
   height: 100%;
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 5px;
 }
 
 .sendholder{
@@ -87,7 +87,7 @@ button{
   width: 80px;
   float:right;
   background-color:#FD7057;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 5px;
 }
 
 button:hover{
@@ -101,7 +101,7 @@ button:hover{
 	font-size:15px;
 	width:300px;
   text-align:left;
-  border-radius: 19px;
+  border-radius: 5px;
 }
 
 .name{
@@ -118,7 +118,7 @@ button:hover{
   display:block;
 	padding:0px 10px 5px 5px;
   overflow-wrap:break-word;
-  border-radius: 19px;
+  border-radius: 5px;
   margin-left: 5px;
 }
 
