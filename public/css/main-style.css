@@ -51,7 +51,7 @@ body{
 
 .chat-container{
   width:310px;
-  height:410px;
+  height:467.5px;
   background-color:white;
 /*	font-family:"source code pro";*/
 	text-align:center;
@@ -59,7 +59,9 @@ body{
 	display:block;
 	overflow-y:scroll;
   cursor:default;
-  border-radius: 19px;
+  border-radius: 0;
+  border-top-right-radius:19px;
+  border-top-left-radius: 19px;
 }
 
 .type-message{
@@ -67,7 +69,6 @@ body{
   border: 1px solid #FD7057;
   width: 230px;
   height: 100%;
-  border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
@@ -86,7 +87,6 @@ button{
   width: 80px;
   float:right;
   background-color:#FD7057;
-  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
@@ -116,9 +116,10 @@ button:hover{
   min-width:80%;
   max-width:89%;
   display:block;
-	padding:0px 10px 10px 10px;
+	padding:0px 10px 5px 5px;
   overflow-wrap:break-word;
   border-radius: 19px;
+  margin-left: 5px;
 }
 
 .rap{
@@ -150,6 +151,9 @@ button:hover{
 
 .nameheader {
   text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: larger;
 }
 
 .orange-wrap {
