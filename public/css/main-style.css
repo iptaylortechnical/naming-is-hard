@@ -50,8 +50,8 @@ body{
 }
 
 .chat-container{
-  width:310px;
-  height:467.5px;
+  width:340px;
+  height:510px;
   background-color:white;
 /*	font-family:"source code pro";*/
 	text-align:center;
@@ -62,12 +62,13 @@ body{
   border-radius: 0;
   border-top-right-radius:5px;
   border-top-left-radius: 5px;
+  padding: 5px;
 }
 
 .type-message{
   outline:none;
   border: 1px solid #FD7057;
-  width: 230px;
+  width: 260px;
   height: 100%;
   border-bottom-left-radius: 5px;
 }
@@ -97,11 +98,12 @@ button:hover{
 .message{
   min-height:20px;
   border:1px solid lightgrey;
-  margin:5px;
 	font-size:15px;
-	width:300px;
+	width:100%;
   text-align:left;
   border-radius: 5px;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
 }
 
 .name{
@@ -151,9 +153,15 @@ button:hover{
 
 .nameheader {
   text-align: center;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  position: absolute;
   font-size: larger;
+  padding: 0 20px 0 20px;
+  background: white;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
 }
 
 .orange-wrap {

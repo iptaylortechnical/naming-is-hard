@@ -224,7 +224,21 @@ function updateBlocks(){
 						
 							console.log(response);
 						
-							$('#dash' + bank[currentNomen]).html('<a id="a' + currentNomen + '" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+currentNomen+'</div><div id="chat' + currentNomen + '" class="chat-container">' + records + '</div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><div class="orange-wrap"><input id="type' + currentNomen + '" class="type-message"><button id="send' + nomen + '">send</button></div></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>');
+							$('#dash' + bank[currentNomen]).html(`
+							<a id="a${currentNomen}" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected ">
+								<span class="content-wrapper">
+									<span class="tile-content rap">
+										<div class="nameheader">${currentNomen}</div>
+										<div id="chat${currentNomen}" class="chat-container">${records}</div>
+										<div class="orange-wrap">
+											<input id="type' + currentNomen + '" class="type-message">
+											<button id="send' + nomen + '">send</button>
+										</div>
+									</span>
+								</span>
+								<span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate">
+								</span>
+							</a>`);
 							
 							$('.type-message').focus(function(){
 								var box = $(this).parent().parent().parent().parent().parent();
@@ -299,6 +313,6 @@ function Block(nomen){
 	return {
 		id:'#send'+nomen,
 		nomen:nomen,
-		src: '<a id="0" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><span class="tile-holder tile-holder-sm sendholder"><span class="title"><div class="orange-wrap"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button></div></span></span></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>'
+		src: '<a id="0" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected "><span class="content-wrapper"><span class="tile-content rap"><div class="nameheader">'+nomen+'</div><div id="chat' + nomen + '" class="chat-container"></div><div class="orange-wrap"><input id="type' + nomen + '" class="type-message"><button id="send' + nomen + '">send</button></div></span></span><span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate"></span></a>'
 	};
 }
