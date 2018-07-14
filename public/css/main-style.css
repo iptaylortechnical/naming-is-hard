@@ -65,7 +65,7 @@ body{
 .type-message{
   outline:none;
   border: 1px solid #FD7057;
-/*  width:350px;*/
+  width: 230px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -82,8 +82,8 @@ button{
   border:none;
   color:white;
   margin-top:1px;
-  height:30px;
-/*  width:140px;*/
+  height: 100%;
+  width: 80px;
   float:right;
   background-color:#FD7057;
   border-top-right-radius: 10px;
