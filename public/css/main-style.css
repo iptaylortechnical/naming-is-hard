@@ -1,17 +1,18 @@
 body{
   margin:0;
-	background-color:#297A4A;
+	background-color:white;
 }
 
 .header{
   width:100%;
   height:75px;
-  background-color:#297A4A;
+  background-color:white;
 }
 
 .body{
   width:100%;
-  background-color:#297A4A;
+  background-color:white;
+  margin-top: 30px;
 }
 
 .footer{
@@ -30,6 +31,7 @@ body{
   border-radius:5px;
 /*  font-family: 'Source Code Pro';*/
   border:none;
+  background: whitesmoke;
 }
 
 .incushion{
@@ -56,11 +58,13 @@ body{
 	font-size:30px;
 	display:block;
 	overflow-y:scroll;
-	cursor:default;
+  cursor:default;
+  border-radius: 19px;
 }
 
 .type-message{
   outline:none;
+  border-radius: 10px;
 /*  width:350px;*/
 }
 
@@ -73,7 +77,7 @@ body{
 
 button{
   outline:none;
-  border-radius:none;
+  border-radius:10px;
   border:none;
   color:white;
   margin-top:1px;
@@ -93,12 +97,14 @@ button:hover{
   margin:5px;
 	font-size:15px;
 	width:300px;
-	text-align:left;
+  text-align:left;
+  border-radius: 19px;
 }
 
 .name{
   max-width:90%;
   padding-right:10px;
+  padding-left:10px;
 	word-wrap:break-word;
 	font-size:10px;
 }
@@ -108,7 +114,8 @@ button:hover{
   max-width:89%;
   display:block;
 	padding:0px 10px 10px 10px;
-	overflow-wrap:break-word;
+  overflow-wrap:break-word;
+  border-radius: 19px;
 }
 
 .rap{
@@ -136,4 +143,8 @@ button:hover{
 
 .message-image{
 	width:98%;
+}
+
+.nameheader {
+  text-align: center;
 }
