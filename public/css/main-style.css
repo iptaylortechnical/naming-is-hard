@@ -66,6 +66,7 @@ body{
   outline:none;
   border: 1px solid #FD7057;
   width: 230px;
+  height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
