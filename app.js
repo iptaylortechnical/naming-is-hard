@@ -44,7 +44,6 @@ app.lel = function(io){
 					var intent = msg.intent;
 					var body = msg.body;
 				
-					console.log(msg);
 					console.log("Received chat from " + this.session + " intended for " + msg.intent + " with body " + msg.body);
 				
 					info.getUserFromSession(senderSession, db, function(e, doc){
