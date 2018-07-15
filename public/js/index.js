@@ -31,7 +31,8 @@ $(".login").submit(function(){
 	var password = document.getElementById('p').value;
 	
 	xhttp.open("POST", "/auth", true);
-	xhttp.send({username, password});
+	xhttp.setRequestHeader("Content-Type", "application/json");
+	xhttp.send(JSON.stringify({username, password}));
 	
 	
   

@@ -222,8 +222,6 @@ function updateBlocks(){
 						
 							var currentNomen = response.name;
 						
-							console.log(response);
-						
 							$('#dash' + bank[currentNomen]).html(`
 							<a id="a${currentNomen}" 0.41s;="" class="tile tile-lg tile-grey ripple-effect animated selected ">
 								<span class="content-wrapper">
@@ -231,8 +229,8 @@ function updateBlocks(){
 										<div class="nameheader">${currentNomen}</div>
 										<div id="chat${currentNomen}" class="chat-container">${records}</div>
 										<div class="orange-wrap">
-											<input id="type' + currentNomen + '" class="type-message">
-											<button id="send' + nomen + '">send</button>
+											<input id="type${currentNomen}" class="type-message">
+											<button id="send${nomen}">send</button>
 										</div>
 									</span>
 								</span>

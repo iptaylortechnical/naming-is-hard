@@ -26,7 +26,7 @@ router.post('/', function(req, res, next) {
 
 	var query = req.body;
 	var db = req.db;
-
+	console.log(req)
 	if(query){
 		username = query.username;
 		console.log(username);
