@@ -143,9 +143,9 @@ function updateBlocks(){
 						chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 					
 					var box = chatWindow.parent().parent().parent();
-					if(!$($(box.children().children().children()[2]).children().children()[0]).is(':focus')){
+					if(!$(chatWindow.parent().children()[2].children[0]).is(':focus')){
 						box.addClass('new');
-						$(box.children().children().children()[0]).attr('style', 'color:white;');
+						$(box.children()[0]).attr('style', 'color:white;');
 					}
 				})
 				hasCallbackBeenSet[parts[i]] = true;
