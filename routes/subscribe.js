@@ -37,4 +37,20 @@ router.post('/', function(req, res, next) {
 	
 });
 
+router.get('/:sub', (req, res) => {
+	let {db} = req;
+	let {sub} = req.params;
+	let {session} = req.cookies;
+
+	if (session && sub) {
+		info.getSubscriptions(db, session, (e, subs) => {
+			subs.push('/' + sub);
+			info.storeSubscriptions(db, session, subs);
+		})
+	}
+	
+	return res.redirect('/');
+
+})
+
 module.exports = router;
