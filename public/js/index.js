@@ -34,9 +34,9 @@ $(".login").submit(function(){
 					
 					if (getParameterByName('add')) {
 						window.location = '/subscribe/' + getParameterByName('add');
+					} else {
+						window.location = '/';
 					}
-
-					window.location = '/';
 				}
 	    }
 	};
