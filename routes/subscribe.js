@@ -49,6 +49,7 @@ router.get('/:sub', (req, res) => {
 					subs.push('/' + sub);
 					info.storeSubscriptions(db, session, subs);
 				})
+				return res.redirect('/');
 			} else {
 				return res.redirect('/?add=' + sub);
 			}
