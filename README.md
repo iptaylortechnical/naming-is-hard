@@ -1,5 +1,5 @@
 # TapNoble
-I started this project to showcase my ability to quickly build useful and efficient apps that can be effortlessly scaled, using a variety of technologies. [Try it out yourself!](http://tapnoble.com) Simply log in with any credentials and in the top grey bar that looks like a search bar, type any number of /topics separated by spaces. E.g.: /football /hockey
+I started this project to showcase my ability to quickly build useful and efficient apps that can be effortlessly scaled, using a variety of technologies. [Try it out yourself!](https://tapnoble.com) Simply log in with any credentials and in the top grey bar that looks like a search bar, type any number of /topics separated by spaces. E.g.: /football /hockey
 
  **TapNoble** is a lightweight socket-based chat network built entirely from scratch. Most of the work was done over about the course of two and a half weeks, but some improvements and additions have been made since.
 
