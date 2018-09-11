@@ -53,9 +53,9 @@ router.get('/:sub', (req, res) => {
 				return res.redirect('/?add=' + sub);
 			}
 		})
+	} else {
+		return res.redirect('/');
 	}
-
-	return res.redirect('/');
 
 })
 
