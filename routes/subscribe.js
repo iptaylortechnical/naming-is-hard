@@ -2,15 +2,15 @@ var express = require('express');
 var router = express.Router();
 var info = require('../utilities/info');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
+/* POST users listing. */
+router.post('/', function(req, res, next) {
 
-	var query = req.query;
+	var body = req.body;
 	var db = req.db;
 	
-	if(query && query.phrases && query.session){
-		session = query.session;
-		phrases = query.phrases;
+	if(body && body.phrases && body.session){
+		session = body.session;
+		phrases = body.phrases;
 		
 		info.getSessionExists(session, db, function(e, exists){
 			if(exists){

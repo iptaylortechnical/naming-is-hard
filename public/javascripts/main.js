@@ -154,8 +154,12 @@ function updateBlocks(){
 	
 		var xhttp = new XMLHttpRequest();
 		
-		xhttp.open("GET", "/subscribe?session=" + $.cookie('session') + "&phrases=" + parts.join(','), true);
-		xhttp.send();
+		xhttp.open("POST", "/subscribe", true);
+		xhttp.setRequestHeader("Content-Type", "application/json");
+		xhttp.send(JSON.stringify({session: $.cookie('session'), phrases: parts.join(',')}));
+
+		// xhttp.open("GET", "/subscribe?session=" + $.cookie('session') + "&phrases=" + parts.join(','), true);
+		// xhttp.send();
 		
 		var dashes = $('.dash');
 		
