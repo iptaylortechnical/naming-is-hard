@@ -141,13 +141,13 @@ function updateBlocks(){
 						}
 					}
 
-					if(Height - Top < 540)
+					if(Height - Top > 540)
 						chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 					
 					if(!$(`#type${intent}`).is(':focus')){
 						$(`#a${intent}`).addClass('new');
 						audio.play();
-						document.title = '*TapNoble*'
+						document.title = '*TapNoble*';
 						// $(box.children()[0]).attr('style', 'color:white;');
 					}
 				})
