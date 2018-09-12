@@ -244,6 +244,8 @@ function updateBlocks(){
 								<span 270px;=" " width:=" " top:=" " 104px;=" " left:=" " -44px;="" class="ink animate">
 								</span>
 							</a>`);
+
+							$(`#chat${currentNomen}`).scrollTop(document.getElementById(`chat${currentNomen}`).scrollHeight);
 							
 							$('.type-message').focus(function(){
 								$(`#a${currentNomen}`).removeClass('new');
