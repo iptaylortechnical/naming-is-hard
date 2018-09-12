@@ -123,6 +123,7 @@ app.use('/r', r);
 app.use('/', main);
 app.use('/auth', authorize);
 app.use('/subscribe', subscribe);
+app.use('/s', subscribe);
 app.use('/getsubs', getSubs);
 app.use('/logout', logout);
 
