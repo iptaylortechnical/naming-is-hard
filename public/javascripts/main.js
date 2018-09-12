@@ -23,6 +23,8 @@ var lastBody = '';
 
 var socket = io();
 
+let audio = new Audio('https://notificationsounds.com/notification-sounds/intuition-561/download/mp3');
+
 
 socket.on('auth', function(){
 	console.log('got auth request, sending cookie');
@@ -142,10 +144,11 @@ function updateBlocks(){
 					if(Height - Top < 540)
 						chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 					
-					var box = chatWindow.parent().parent().parent();
-					if(!$(chatWindow.parent().children()[2].children[0]).is(':focus')){
-						box.addClass('new');
-						$(box.children()[0]).attr('style', 'color:white;');
+					if(!$(`#type${intent}`).is(':focus')){
+						$(`a${intent}`).addClass('new');
+						audio.play();
+						document.title = '*TapNoble*'
+						// $(box.children()[0]).attr('style', 'color:white;');
 					}
 				})
 				hasCallbackBeenSet[parts[i]] = true;
@@ -243,9 +246,9 @@ function updateBlocks(){
 							</a>`);
 							
 							$('.type-message').focus(function(){
-								var box = $(this).parent().parent().parent().parent().parent();
-								box.removeClass('new');
-								$(box.children().children().children()[0]).attr('style', 'color:#111111;');
+								$(`a${currentNomen}`).removeClass('new');
+								document.title = 'TapNoble';
+								// $(box.children().children().children()[0]).attr('style', 'color:#111111;');
 							})
 							
 							$('.imgmode').click(function(){
