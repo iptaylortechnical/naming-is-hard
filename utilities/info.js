@@ -83,7 +83,8 @@ exports.getChats = function(db, intent, next){
 	
 	records.find({intent:intent}, function(e, docs){
 		if(docs[0]){
-			next(e, docs[0].records.slice(docs[0].records.length - 200) || '');
+			const recs = docs[0].records;
+			next(e, recs.slice(recs.length - 200) || '');
 		}else{
 			next('intent does not exist ' + e);
 		}
