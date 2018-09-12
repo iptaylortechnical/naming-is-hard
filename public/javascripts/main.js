@@ -145,7 +145,7 @@ function updateBlocks(){
 						chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 					
 					if(!$(`#type${intent}`).is(':focus')){
-						$(`a${intent}`).addClass('new');
+						$(`#a${intent}`).addClass('new');
 						audio.play();
 						document.title = '*TapNoble*'
 						// $(box.children()[0]).attr('style', 'color:white;');
@@ -246,7 +246,7 @@ function updateBlocks(){
 							</a>`);
 							
 							$('.type-message').focus(function(){
-								$(`a${currentNomen}`).removeClass('new');
+								$(`#a${currentNomen}`).removeClass('new');
 								document.title = 'TapNoble';
 								// $(box.children().children().children()[0]).attr('style', 'color:#111111;');
 							})
