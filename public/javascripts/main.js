@@ -141,7 +141,7 @@ function updateBlocks(){
 						}
 					}
 
-					if(Height - Top > 540)
+					if(Height - Top < 540)
 						chatWindow.scrollTop(document.getElementById('chat'+intent).scrollHeight);
 					
 					if(!$(`#type${intent}`).is(':focus')){
